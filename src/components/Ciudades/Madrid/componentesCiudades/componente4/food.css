@@ -1,0 +1,92 @@
+.foodGlobal{
+    margin-bottom: 10vh;
+}
+
+H1{
+    margin-left: 5%;
+}
+
+.foodContainer{
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    margin: auto;
+}
+
+.foodContainer1{
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    margin: auto;
+}
+
+.foodContainer1Hide{
+    display: flex;
+    justify-content: space-around;
+}
+
+.foodImage{
+    width: 280px;
+    height: 184px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 1px solid rgb(173,21,25);
+    margin-bottom: 8vh;
+}
+
+.foodContainer div:nth-child(1){
+    background: url("../../../../../img/Food/besugoMadrileña.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.foodContainer div:nth-child(2){
+    background: url("../../../../../img/Food/callosMadrileña.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.foodContainer div:nth-child(3){
+    background: url("../../../../../img/Food/bocadilloCalamares.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.foodContainer div:nth-child(4){
+    background: url("../../../../../img/Food/huevosEstrellados.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.foodName{
+    margin-bottom: 2vh;
+    color: rgb(250, 189, 0);
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 3%;
+}
+
+.foodContainer1 div:nth-child(1){
+    background: url("../../../../../img/Food/sopaAjo.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.foodContainer1 div:nth-child(2){
+    background: url("../../../../../img/Food/tortillaPatata.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.foodContainer1 div:nth-child(3){
+    background: url("../../../../../img/Food/patatasBravas.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.foodContainer1 div:nth-child(4){
+    background: url("../../../../../img/Food/caracolesMadrileña.jpg");
+    background-position: center;
+    background-size: cover;
+}

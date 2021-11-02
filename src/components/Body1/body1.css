@@ -1,0 +1,17 @@
+.body1{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../img/madrid.jpeg");
+    height: 600px;
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.lema{
+    margin: 0;
+    font-size: 100px;
+    font-family:'Ephesis', cursive;
+    font-weight: 550;
+    color: white;
+}

@@ -1,0 +1,99 @@
+.slideshowMainContainer{
+    width: 800px;
+    height: 250px;
+    margin: 50px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slideshowContainer{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.slide{
+    min-width: 100%;
+    height: 250px;
+    overflow: hidden;
+    transition: .3s ease all;
+    z-index: 10;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide1{
+    background: url("../../img/invierno.jpg");
+    background-position: center;
+
+}
+
+.slide2{
+    background: url("../../img/verano.jpg");
+    background-position: center;
+
+}
+
+.slide3{
+    background: url("../../img/otoño.jpg");
+    background-position: center;
+
+}
+
+.slide4{
+    background: url("../../img/primavera.jpg");
+    background-position: center;
+
+}
+
+.slide a{
+    width: 100%;
+    height: 100%;
+}
+
+.controls{
+    position: absolute;
+    top: 0;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.slideshowButtons{
+    background-color: transparent;
+    border: none;
+    pointer-events: all;
+    cursor: pointer;
+    outline: none;
+    width: 50px;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    transition: .3s ease all;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.384);
+}
+
+.slideshowButtons:hover{
+    background: rgba(0, 0, 0, 0.158);
+    color: rgba(255, 255, 255, 0.562);
+}
+
+.derecho{
+    right: 0;
+    filter: drop-shadow(-2px 0px 0px #fff);
+}
+
+.derecho:hover{
+    filter: drop-shadow(-2px 0px 0px rgb(0, 0, 0));
+}
+.izquierdo{
+    filter: drop-shadow(2px 0px 0px #fff);
+}
+
+.izquierdo:hover{
+    filter: drop-shadow(2px 0px 0px rgb(0, 0, 0));
+}

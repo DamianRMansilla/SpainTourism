@@ -1,0 +1,33 @@
+.weather{
+    background-image: url("../../img/cielo.jpg");
+    width: 60%;
+    height: 300px;
+    margin: auto;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+p{
+    margin: 0;
+}
+.temperature{
+    font-size: 80px;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.tempDesc{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.weatherFirstContainer{
+    margin: 2%;
+}

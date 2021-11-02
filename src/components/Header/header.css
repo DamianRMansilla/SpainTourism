@@ -1,0 +1,135 @@
+.home{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    z-index: 5;
+    border-bottom: 1px solid black;
+    overflow-x: hidden;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+/*position: sticky;
+position: -webkit-sticky;
+top: 0;
+background-color: white;
+*/
+
+.header img{
+    margin: auto;
+    height: 100%;
+}
+
+.headerMenuUl{
+    margin: auto;
+    padding: 0;
+    width: 60%;
+    display: none;
+    box-sizing: border-box;
+}
+
+.headerMenuUl a{
+    margin: 0 auto;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    text-align: center;
+}
+
+.headerMenu{
+    font-size: 20px;
+    list-style: none;
+    font-weight: 700;
+    width: 100%;
+    line-height: 3rem;
+}
+
+.headerMenu:hover{
+    box-sizing: border-box;
+    border-bottom: solid rgb(173,21,25) 4px;
+    color: rgb(173,21,25);
+}
+
+.searchBar{
+    display: flex;
+    box-sizing: border-box;
+    margin: auto;
+    width: 10%;
+}
+
+.searchBar button{
+    background-color: transparent;
+    border: none;
+    font-weight: 700;
+}
+
+.searchBar input{
+    border: none;
+    border-bottom: 1px solid black;
+    display: none;
+}
+
+.burger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+.burger svg{
+    display: block;
+}
+
+.burger button{
+    background-color: white;
+    border: none;
+    font-size: 25px;
+}
+
+.searchButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    margin-right: 5%;
+    box-sizing: border-box;
+}
+
+.searchButton svg{
+    display: block;
+}
+
+.searchButton button{
+    background-color: white;
+    border: none;
+    font-size: 25px;
+
+}
+
+.tituloPagina{
+    width: 80%;
+    text-align: center;
+}
+
+@media (min-width: 1025px){
+    .headerMenuUl{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .burger{
+        margin-right: 5%;
+    }
+    .tituloPagina{
+        display: none;
+    }
+}

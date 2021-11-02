@@ -1,0 +1,67 @@
+.searchBarRight{
+    margin-top: 10vh;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.89);
+    color: rgb(173,21,25);
+    font-size: 25px;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    border-top: rgb(173,21,25) solid 1px;
+    display: flex;
+    align-items: center;
+}
+
+.searchBar{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    opacity: 0;
+    z-index: -5;
+    box-sizing: border-box;
+}
+
+.searchBarOut{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+.searchBarForm{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBarForm input{
+    width: 50%;
+    line-height: 6vh;
+    border: none;
+    border-bottom: rgb(173,21,25) solid 1px;
+    font-size: 25px;
+    background-color: white;
+    color: rgb(173,21,25);
+    box-sizing: border-box;
+}
+
+/* Seguir viendo esto */
+.searchBarForm input::placeholder{
+    color: rgba(0, 0, 0, 0.815);
+    font-family: 'Courier Prime', monospace;
+}
+
+.searchBarForm button{
+    border: none;
+    font-size: 25px;
+    color: rgb(173,21,25);
+    background-color: transparent;
+}
+
+.searchBarForm svg{
+    display: block;
+}
+

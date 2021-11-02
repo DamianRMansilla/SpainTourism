@@ -1,0 +1,56 @@
+.cityDescription{
+    width: 60%;
+    margin: 0 0 5% 5%;
+}
+
+.cityDescription p{
+    text-align: justify;
+}
+
+
+.cityMain{
+    display: flex;
+}
+
+.cityButtons{
+    display: flex;
+    flex-direction: column;
+    margin: auto
+}
+
+.cityButtons button{
+    margin: 3% 0;
+    background-color: white;
+    border: none;
+    font-size: 1rem;
+    color: rgb(173,21,25);
+    font-weight: 700;
+    width: 20vw;
+}
+
+.cityButtons button:hover{
+    background-color: rgb(250, 189, 0);
+    line-height: 3rem;
+    border-left: rgb(173,21,25) solid 1px;
+}
+
+.cityButton{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: solid 1px rgb(250, 189, 0);
+    height: 3rem;
+    margin: 2vh 0;
+}
+
+.cityButtons i{
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    width: 4vw;
+    font-size: 1.1rem;
+    line-height: 3rem;
+    background-color: rgb(250, 189, 0);
+    padding: 0 5px;
+    color: rgb(173,21,25);
+}
