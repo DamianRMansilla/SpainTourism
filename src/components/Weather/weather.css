@@ -1,7 +1,7 @@
 .weather{
     background-image: url("../../img/cielo.jpg");
-    width: 60%;
-    height: 300px;
+    width: 90%;
+    height: 250px;
     margin: auto;
     color: white;
     font-size: 20px;
@@ -13,10 +13,12 @@
 
 p{
     margin: 0;
+    font-size: 14px;
+    text-align: center;
 }
 .temperature{
     font-size: 80px;
-    margin-top: 10%;
+    margin-top: 6%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -30,4 +32,24 @@ p{
 
 .weatherFirstContainer{
     margin: 2%;
+    width: 100%;
+}
+
+
+@media(min-width: 361px) and (max-width: 768px){
+    p{
+        font-size: 16px;
+    }
+    .weather{
+        width: 70%;
+    }
+}
+
+@media(min-width: 769px){
+    p{
+        font-size: 16px;
+    }
+    .weather{
+        width: 50%;
+    }
 }

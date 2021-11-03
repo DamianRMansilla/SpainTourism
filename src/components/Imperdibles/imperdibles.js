@@ -1,9 +1,9 @@
 import "./imperdibles.css"
-import Boqueria from "../../img/boqueria.jpg"
-import Alhambra from "../../img/alhambra.jpg"
-import Ronda from "../../img/ronda.jpg"
-import CaminoDeSantiago from "../../img/caminoSantiago.jpg"
-import Toledo from "../../img/toledo.jpg"
+import Boqueria from "../../img/Imperdibles/boqueria.jpg"
+import Alhambra from "../../img/Imperdibles/alhambra.jpg"
+import Ronda from "../../img/Imperdibles/ronda.jpg"
+import CaminoDeSantiago from "../../img/Imperdibles/caminoSantiago.jpg"
+import Toledo from "../../img/Imperdibles/toledo.jpg"
 import { Link } from "react-router-dom"
 
 export default function Imperdibles(){

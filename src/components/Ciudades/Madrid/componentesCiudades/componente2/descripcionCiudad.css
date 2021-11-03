@@ -1,6 +1,7 @@
 .cityDescription{
-    width: 60%;
-    margin: 0 0 5% 5%;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    padding: 0 3%;
 }
 
 .cityDescription p{
@@ -8,24 +9,32 @@
 }
 
 
-.cityMain{
-    display: flex;
+.cityButton a{
+    width: 100%;
 }
 
 .cityButtons{
     display: flex;
     flex-direction: column;
-    margin: auto
+    margin: auto;
+    box-sizing: border-box;
+    padding: 0 3%;
+}
+
+.cityButton p{
+    text-align: center;
+    width: 100%;
 }
 
 .cityButtons button{
+    box-sizing: border-box;
     margin: 3% 0;
     background-color: white;
     border: none;
     font-size: 1rem;
     color: rgb(173,21,25);
     font-weight: 700;
-    width: 20vw;
+    width: 100%;
 }
 
 .cityButtons button:hover{
@@ -39,18 +48,59 @@
     justify-content: flex-start;
     align-items: center;
     border: solid 1px rgb(250, 189, 0);
-    height: 3rem;
-    margin: 2vh 0;
+    height: 2rem;
+    margin: 2vh auto;
+    width: 70%;
 }
 
 .cityButtons i{
     box-sizing: border-box;
     display: block;
     text-align: center;
-    width: 4vw;
+    width: 16vw;
     font-size: 1.1rem;
-    line-height: 3rem;
+    line-height: 2rem;
     background-color: rgb(250, 189, 0);
     padding: 0 5px;
     color: rgb(173,21,25);
+}
+
+
+@media(min-width: 361px) and (max-width: 768px){
+    .cityDescription{
+        width: 100%
+    }
+    .cityButtons i{
+        width: 10vw;
+        font-size: 1.1rem;
+        line-height: 3rem;
+        padding: 0 5px;
+    }
+    .cityButton{
+        height: 3rem;
+    }
+}
+
+@media(min-width: 769px){
+    .cityDescription{
+        width: 60%;
+        margin: 0 0 5% 5%;
+    }
+    .cityMain{
+        display: flex;
+    }
+    .cityButtons i{
+        width: 4vw;
+        font-size: 1.1rem;
+        line-height: 3rem;
+        padding: 0 5px;
+        height: 3rem;
+    }
+    .cityButtons button{
+        width: 20vw;
+    }    
+    .cityButton{
+        height: 3rem;
+        width: 100%;
+    }
 }

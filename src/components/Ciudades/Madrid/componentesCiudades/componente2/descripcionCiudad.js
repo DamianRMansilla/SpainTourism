@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "./descripcionCiudad.css"
 
 export default function DescripcionCiudad(){
@@ -13,16 +14,20 @@ export default function DescripcionCiudad(){
                 </div>
                 <div className="cityButtons">
                     <div className="cityButton">
-                        <i class="fas fa-hotel"></i><button><p>¿DONDE ALOJARME?</p></button>
+                        <i class="fas fa-hotel"></i>
+                        <Link to="/"><button><p>¿DONDE ALOJARME?</p></button></Link>
                     </div>
                     <div className="cityButton">
-                        <i class="fas fa-hotel"></i><button><p>¿QUE VISITAR?</p></button>
+                        <i class="fas fa-hotel"></i>
+                        <Link to="/"><button><p>¿QUE VISITAR?</p></button></Link>
                     </div>
                     <div className="cityButton">
-                        <i class="fas fa-utensils"></i><button><p>¿DONDE COMER?</p></button>
+                        <i class="fas fa-utensils"></i>
+                        <Link to="/"><button><p>¿DONDE COMER?</p></button></Link>
                     </div>
                     <div className="cityButton">
-                        <i class="fas fa-plane"></i><button><p>¿COMO LLEGAR?</p></button>
+                        <i class="fas fa-plane"></i>
+                        <Link to="/"><button><p>¿COMO LLEGAR?</p></button></Link>
                     </div>
                 </div>
             </div>

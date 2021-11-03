@@ -50,11 +50,11 @@ export default function WeatherApi(){
                     <p className="temperature">{localTemp}°{localTempMetric}</p>
                     <p className="tempDesc">{weatherDesc}</p>
                 </div>        
-                <div> 
+                {/*<div> 
                     <img src={`../../img/WeatherImages/${weatherIcon}.png`}/>
                     <img src={weathImg}/>
                     <p>{weatherIcon}</p>
-                </div>
+                </div>*/}
             </div>
         </>
     )

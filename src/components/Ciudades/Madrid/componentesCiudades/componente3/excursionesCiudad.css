@@ -12,13 +12,15 @@
 }
 
 .excursions a{
-    width: 22%;
+    width: 38%;
     margin: 3vh 5vw;
     text-decoration: none;
     text-align: center;
     font-weight: 500;
     color: rgb(250, 189, 0);
     background-color: rgb(173,21,25);
+    border: black solid 1px;
+
 }
 
 .excursions a:hover{
@@ -27,17 +29,32 @@
 }
 
 .excursions p{
-    line-height: 2rem;
+    line-height: 1.2rem;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.excursion{
-    border: black solid 1px;
-}
-
 .excursion img{
     width: 100%;
-    height: 26vh;
+    height: 10vh;
+}
+
+@media(min-width: 361px) and (max-width: 768px){
+    .excursion img{
+        width: 100%;
+        height: 22vh;
+    }
+}
+
+@media(min-width: 769px){
+    .excursion img{
+        width: 100%;
+        height: 26vh;
+    }
+    .excursions a{
+        width: 22%;
+        margin: 3vh 5vw;
+    }
 }

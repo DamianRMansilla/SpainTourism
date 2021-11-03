@@ -1,10 +1,10 @@
-import Madrid1 from "../../img/madrid1.jpg"
-import Barcelona from "../../img/barcelona.jpg"
-import Malaga from "../../img/malaga.jpg"
-import Sevilla from "../../img/sevilla.jpg"
-import Valencia from "../../img/valencia.jpg"
-import SanSebastian from "../../img/peineViento.jpg"
-import SantiagoDeCompostela from "../../img/catedralSantiagoCompostela.jpg"
+import Madrid1 from "../../img/Cities/madrid1.jpg"
+import Barcelona from "../../img/Cities/barcelona.jpg"
+import Malaga from "../../img/Cities/malaga.jpg"
+import Sevilla from "../../img/Cities/sevilla.jpg"
+import Valencia from "../../img/Cities/valencia.jpg"
+import SanSebastian from "../../img/Cities/peineViento.jpg"
+import SantiagoDeCompostela from "../../img/Cities/catedralSantiagoCompostela.jpg"
 import { Link } from "react-router-dom"
 
 export default function Body2(){

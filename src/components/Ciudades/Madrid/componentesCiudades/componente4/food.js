@@ -1,6 +1,11 @@
+import React, { useState } from 'react';
+
 import "./food.css"
 
 export default function Food(){
+    const [show, setShow] = useState(false)
+    const showMore = () => setShow(true)
+
     return(
         <>
             <div className="foodGlobal">
@@ -19,7 +24,10 @@ export default function Food(){
                         <p className="foodName">Huevos Estrellados</p>
                     </div>    
                 </div>
-                <div className="foodContainer1">
+                <div className={show ? "seeMoreHidden" : "seeMore"}>
+                    <button onClick={showMore}>Ver mas...</button>
+                </div>
+                <div className={show? "foodContainer1": "foodContainer1Hidden"}>
                     <div className="foodImage">
                         <p className="foodName">Sopa de ajo</p>
                     </div>    
