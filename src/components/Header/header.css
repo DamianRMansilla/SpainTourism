@@ -118,6 +118,7 @@ background-color: white;
 .tituloPagina{
     width: 80%;
     text-align: center;
+    align-self: center;
 }
 
 @media (min-width: 1025px){

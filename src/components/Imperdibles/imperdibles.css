@@ -6,10 +6,9 @@
 }
 
 .imperdiblesEspaña a{
-    width: 18%;
+    width: 40%;
     margin: 2vh 3vw;
     text-decoration: none;
-    
 }
 
 .imperdibles{
@@ -22,10 +21,12 @@
     overflow: hidden;
 }
 
-.imgImperdibles{
+.imgImperdibles{    
+    height: 35vh;
     transition: transform 1s ease-in-out;
     overflow: hidden;
-}
+    width: 100%;
+    border-radius: 5px 5px 0 0;}
 
 .imperdibles:hover{
     background-color: rgb(250, 189, 0);
@@ -37,23 +38,21 @@
     transform: scale(1.05);
 }
 
-.imperdibles img{
-    width: 100%;
-    border-radius: 5px 5px 0 0;
-    height: 45vh;
-}
-
 .divImgImperdible{
     overflow: hidden;
 }
 
 .imperdibles p{
     margin: 0;
-    line-height: 6vh;
+    line-height: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 0 0 5px 5px;
+}
+
+p.longName{
+    line-height: 1.5rem;
 }
 
 .imperdiblesTitulo{
@@ -67,4 +66,30 @@
     text-align: center;
     font-size: 24px;
     margin-bottom: 1vh;
+}
+
+@media(min-width: 361px) and (max-width: 768px){
+    .imperdiblesEspaña a{
+        width: 25%;
+    }
+}
+
+@media(min-width: 769px){
+    .imperdiblesTitulo{
+        font-size: 3rem;
+    }
+    .subtitle1{
+        font-size: 1.8rem;
+    }
+    .imperdiblesEspaña a{
+        width: 18%;
+    }
+    .imgImperdibles{
+        overflow: hidden;
+        transition: transform 1s ease-in-out;
+        height: 45vh;
+    }
+    .imperdibles p{
+        line-height: 3rem;
+    }
 }

@@ -66,7 +66,7 @@ export default function Body2(){
                         <div className="imgDiv">
                             <img className="imgDestinos" src={SantiagoDeCompostela} alt=""/>
                         </div>
-                        <p>Santiago De Compostela</p>
+                        <p className="santiago">Santiago De Compostela</p>
                     </div>
                 </Link>
                 <Link to="/Ciudades/Mallorca">

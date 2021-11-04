@@ -17,7 +17,7 @@ export default function Imperdibles(){
                         <div className="divImgImperdible">
                             <img className="imgImperdibles" alt=""/>
                         </div>
-                        <p>Mercado de San Miguel - Madrid</p>
+                        <p className="longName">Mercado de San Miguel - Madrid</p>
                     </div>
                 </Link>
                 <Link to="/Imperdibles/Alhambra">
@@ -49,7 +49,7 @@ export default function Imperdibles(){
                         <div className="divImgImperdible">
                             <img className="imgImperdibles" alt=""/>
                         </div>
-                        <p>Museo del Prado - Madrid</p>
+                        <p className="longName">Museo del Prado - Madrid</p>
                     </div>
                 </Link>
                 <Link to="/Imperdibles/MercadoBoqueria">
@@ -57,7 +57,7 @@ export default function Imperdibles(){
                         <div className="divImgImperdible">
                            <img className="imgImperdibles" src={Boqueria} alt=""/>
                         </div>
-                        <p>Mercado la Boqueria - Barcelona</p>
+                        <p className="longName">Mercado la Boqueria - Barcelona</p>
                     </div>
                 </Link>
                 <Link to="/Imperdibles/CaminoDeSantiago">

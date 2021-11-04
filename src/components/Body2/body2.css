@@ -7,7 +7,7 @@
 
 .destinosGlobal a{
     text-decoration: none;
-    width: 18%;
+    width: 40%;
     margin: 2vh 3vw;
 }
 
@@ -19,9 +19,7 @@
 }
 
 .imgDestinos{
-    overflow: hidden;
-    transition: transform 1s ease-in-out;
-    height: 45vh;
+    height: 35vh;
 }
 
 .imgDiv{
@@ -52,17 +50,45 @@
     line-height: 3rem;
     font-weight: 500;
 }
+p.santiago{
+    line-height: 1.5rem;
+}
 
 .masVisitados{
     margin: 6vh 0 0 0;
     color: rgb(173,21,25);
     text-align: center;
-    font-size: 48px;
+    font-size: 2rem;
 }
 
 .subtitle1{
     text-align: center;
-    font-size: 24px;
+    font-size: 1.3rem;
     margin-bottom: 1vh;
 }
 
+@media(min-width: 361px) and (max-width: 768px){
+    .destinosGlobal a{
+        width: 25%;
+    }
+}
+
+@media(min-width: 769px){
+    .masVisitados{
+        font-size: 3rem;
+    }
+    .subtitle1{
+        font-size: 1.8rem;
+    }
+    .destinosGlobal a{
+        width: 18%;
+    }
+    .imgDestinos{
+        overflow: hidden;
+        transition: transform 1s ease-in-out;
+        height: 45vh;
+    }
+    .destinos p{
+        line-height: 3rem;
+    }
+}
