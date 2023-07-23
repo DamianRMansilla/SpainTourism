@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 
 export default function Sidebar(){
-    const [moveIn, setMoveIn] = useState(false)
+    // const [moveIn, setMoveIn] = useState(false)
 
-    const hide = () => setMoveIn(false)
-    const show = () => setMoveIn(true)
+    // const hide = () => setMoveIn(false)
+    // const show = () => setMoveIn(true)
 
     return(
         <>
-            <body>
+            {/* <body> */}
                 {/*<div className={moveIn? "sidebar": "sidebarOut"}>*/}
                     <div className="sidebarRight">
                         <div className="subseccion">
@@ -62,7 +62,7 @@ export default function Sidebar(){
                         </div>    
                     </div>
                 {/*</div>*/}
-            </body>    
+            {/* </body>     */}
         </>
     )
 }

@@ -11,35 +11,24 @@
     text-decoration: none;
 }
 
-.imperdibles{
-    margin: auto;
-    text-align: center;
-    background-color: rgb(173,21,25);
-    color: rgb(250, 189, 0);
-    font-weight: 500;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.imgImperdibles{    
-    height: 35vh;
-    transition: transform 1s ease-in-out;
-    overflow: hidden;
-    width: 100%;
-    border-radius: 5px 5px 0 0;}
-
-.imperdibles:hover{
-    background-color: rgb(250, 189, 0);
-    color: rgb(173,21,25);
-}
-
-.imperdibles:hover > div img{
-    overflow: hidden;
-    transform: scale(1.05);
-}
-
 .divImgImperdible{
-    overflow: hidden;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 18vw;
+    height: 25rem;
+    position: relative;
+}
+
+.divImgImperdible p{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.473);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .imperdibles p{
@@ -48,7 +37,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 0 0 5px 5px;
 }
 
 p.longName{
@@ -56,10 +44,10 @@ p.longName{
 }
 
 .imperdiblesTitulo{
-    margin: 6vh 0 0 0;
     color: rgb(173,21,25);
     text-align: center;
     font-size: 48px;
+    padding-top: 1rem;
 }
 
 .imposible{
@@ -93,3 +81,29 @@ p.longName{
         line-height: 3rem;
     }
 }
+
+
+.boqueria-imp{
+    background: url("../../img/Imperdibles/boqueria.jpg")
+}
+
+.alhambra-imp{
+    background: url("../../img/Imperdibles/alhambra.jpg")
+}
+
+.ronda-imp{
+    background: url("../../img/Imperdibles/ronda.jpg")
+}
+
+.prado-imp{
+    background: url("../../img/museoDelPrado.jpg");
+}
+
+.santiago-imp{
+    background: url("../../img/Imperdibles/caminoSantiago.jpg")
+}
+
+.toledo-imp{
+    background: url("../../img/Imperdibles/toledo.jpg")
+}
+

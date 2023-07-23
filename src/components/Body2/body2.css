@@ -13,17 +13,17 @@
 
 .destinos{
     text-align: center;
-    background-color: rgb(173,21,25);
-    border-radius: 5px;
-    color: rgb(250, 189, 0);
+    color: black;
+    height: 25rem;
 }
 
 .imgDestinos{
-    height: 35vh;
+    height: 22rem;
 }
 
 .imgDiv{
-    overflow:hidden
+    overflow: hidden;
+    height: 22rem;
 }
 
 .destinos:hover > div img{
@@ -31,25 +31,16 @@
     transform: scale(1.05);
 }
 
-.destinos:hover{
-    background-color: rgb(250, 189, 0);
-    color: rgb(173,21,25);
-}
-
-.destinos img{
-    width: 100%;
-    border-radius: 5px 5px 0 0;
-}
-
 .destinos p{
     margin: 0;
-    border-radius: 0 0 5px 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    line-height: 3rem;
+    font-size: 1.7rem;
     font-weight: 500;
+    overflow: hidden;
 }
+
 p.santiago{
     line-height: 1.5rem;
 }
@@ -86,9 +77,52 @@ p.santiago{
     .imgDestinos{
         overflow: hidden;
         transition: transform 1s ease-in-out;
-        height: 45vh;
     }
     .destinos p{
         line-height: 3rem;
     }
+}
+
+
+
+.madrid-city{
+    background: url("../../img/Cities/madrid1.jpg");
+}
+
+.barcelona-city{
+    background: url("../../img/Cities/barcelona.jpg")
+}
+
+.sansebastian-city{
+    background: url("../../img/Cities/peineViento.jpg")
+}
+
+.malaga-city{
+    background: url("../../img/Cities/malaga.jpg");
+}
+
+.sevilla-city{
+    background: url("../../img/Cities/sevilla.jpg")
+}
+
+.valencia-city{
+    background: url("../../img/Cities/valencia.jpg")
+}
+
+.santiago-city{
+    background: url("../../img/Cities/catedralSantiagoCompostela.jpg")
+}
+
+.mallorca-city{
+    background: url("../../img/Cities/mallorca.jpg")
+}
+.city-image-main{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.city-image-main:hover{
+    transform: scale(1.05);
+    transition: 1s;
 }

@@ -10,6 +10,12 @@
     border-top: rgb(173,21,25) solid 1px;
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 0;
+    /* display: none; */
 }
 
 .searchBar{
@@ -19,6 +25,7 @@
     opacity: 0;
     z-index: -5;
     box-sizing: border-box;
+    display: none;
 }
 
 .searchBarOut{
@@ -28,6 +35,7 @@
     opacity: 1;
     z-index: 2;
     box-sizing: border-box;
+    display: block;
 }
 
 .searchBarForm{

@@ -6,19 +6,17 @@
     color: white;
     font-size: 20px;
     font-weight: 500;
-    display: flex;
     border-radius: 10px;
     margin-bottom: 5%;
 }
 
-p{
-    margin: 0;
-    font-size: 14px;
+p.temperature, p.tempDesc{
+    margin: 5px 0;
+    font-size: 20px;
     text-align: center;
 }
 .temperature{
     font-size: 80px;
-    margin-top: 6%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -31,7 +29,7 @@ p{
 }
 
 .weatherFirstContainer{
-    margin: 2%;
+    padding: 2% 0 3% 0;
     width: 100%;
 }
 
@@ -52,4 +50,44 @@ p{
     .weather{
         width: 50%;
     }
+}
+
+
+.weatherIconContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weatherIcon{
+    width: 12vw;
+    height: auto;
+}
+
+.weatherInfo{
+    display: flex;
+    justify-content: center;
+}
+
+.weatherInfoData{
+    display: flex;
+    justify-content: center;
+}
+
+.temperatureP{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.temperature-additional-info{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.visual-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }

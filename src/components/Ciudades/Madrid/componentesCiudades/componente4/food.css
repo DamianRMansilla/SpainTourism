@@ -2,11 +2,18 @@
     margin-bottom: 10vh;
 }
 
-H1{
+h1.que-comer-ciudad{
     text-align: center;
     color: rgb(173,21,25);
-    margin-top: 3vh;
+    padding-top: 8vh;
+    margin: 0;
 }
+
+.adit-info{
+    margin-bottom: 6vh;
+    text-align: center;
+}
+
 
 .foodContainer{
     display: flex;
@@ -16,26 +23,11 @@ H1{
     margin: auto;
 }
 
-.foodContainer1{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 95%;
-    margin: 2vh auto;
-}
-
-.foodContainer1Hidden{
-    display: none;
-}
-
 .foodImage{
-    width: 45%;
-    height: 120px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    border: 1px solid rgb(173,21,25);
-    margin-bottom: 3vh;
+    margin-bottom: 5vh;
 }
 
 .foodContainer div:nth-child(1){
@@ -62,43 +54,39 @@ H1{
     background-size: cover;
 }
 
-.foodName{
-    margin-bottom: 2vh;
-    color: rgb(250, 189, 0);
-    font-weight: 500;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 0 3%;
-    font-size: 12px;
-}
-
-.foodContainer1 div:nth-child(1){
+.foodContainer div:nth-child(5){
     background: url("../../../../../img/Food/sopaAjo.jpg");
     background-position: center;
     background-size: cover;
 }
 
-.foodContainer1 div:nth-child(2){
+.foodContainer div:nth-child(6){
     background: url("../../../../../img/Food/tortillaPatata.jpg");
     background-position: center;
     background-size: cover;
 }
 
-.foodContainer1 div:nth-child(3){
+.foodContainer div:nth-child(7){
     background: url("../../../../../img/Food/patatasBravas.jpg");
     background-position: center;
     background-size: cover;
 }
 
-.foodContainer1 div:nth-child(4){
+.foodContainer div:nth-child(8){
     background: url("../../../../../img/Food/caracolesMadrileña.jpg");
     background-position: center;
     background-size: cover;
 }
 
-.seeMore{
-    text-align: right;
-    margin: 0 5% 3% 0;
-
+.foodName{
+    color: rgb(250, 189, 0);
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 3% 0;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
 }
 
 .seeMore Button{
@@ -125,8 +113,8 @@ H1{
 
 @media(min-width: 769px){
     .foodImage{
-        width: 280px;
-        height: 184px;
+        width: 24vw;
+        min-height: 32vh;
     }
     .foodName{
         font-size: 16px

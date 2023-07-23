@@ -6,20 +6,28 @@ body{
 
 .sidebar{
     box-sizing: border-box;
-    position: absolute;
+    position: fixed;
     top: 0%;
     left: 0%;
     opacity: 0;
     z-index: -5;
+    max-height: 0;
+    min-height: 0;
+    transition: max-height 1s ease-in-out, min-height 1s ease-in-out;
+    display: none;
 }
 
 .sidebarOut{
     box-sizing: border-box;
-    position: absolute;
+    position: fixed;
     top: 0%;
     left: 0%;
     opacity: 1;
-    z-index: 2;
+    z-index: 0;
+    min-height: 100%;
+    max-height: 100%;
+    transition: max-height 1s ease-in-out, min-height 1s ease-in-out;
+    display: block;
 }
 
 .sidebarRight{
@@ -34,27 +42,7 @@ body{
     width: 100vw;
     height: 100vh;
     border-top: rgb(173,21,25) 1px solid;
-}
-
-@keyframes sidebarOut{
-    0%{
-        top: 0%;
-
-    }
-
-    100%{
-        top: -100%;
-    }
-}
-
-@keyframes sidebarIn {
-    0%{
-        top: -100%
-    }
-    
-    100%{
-        top: 0;
-    }
+    /* display: none; */
 }
 
 .subseccion{

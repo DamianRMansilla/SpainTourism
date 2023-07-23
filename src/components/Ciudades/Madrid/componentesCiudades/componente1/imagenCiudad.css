@@ -1,7 +1,20 @@
+
 .bodyMadrid{
     background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../../../../img/madrid.jpeg");
-    height: 200px;
+}
+
+.bodyBarcelona{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../../../../img/barcelona.jpg");
+}
+
+.bodyMalaga{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../../../../img/malaga.jpg");
+}
+
+.cityImage{
+    height: 600px;
     background-position:center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;

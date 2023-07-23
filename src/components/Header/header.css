@@ -12,16 +12,13 @@
     height: 10vh;
     width: 100%;
     z-index: 5;
-    border-bottom: 1px solid black;
     overflow-x: hidden;
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    overflow: hidden;
 }
-
-/*position: sticky;
-position: -webkit-sticky;
-top: 0;
-background-color: white;
-*/
 
 .header img{
     margin: auto;
@@ -50,11 +47,12 @@ background-color: white;
     font-weight: 700;
     width: 100%;
     line-height: 3rem;
+    border-bottom: solid #FFF 2px;
 }
 
 .headerMenu:hover{
     box-sizing: border-box;
-    border-bottom: solid rgb(173,21,25) 4px;
+    border-bottom: solid rgb(173,21,25) 2px;
     color: rgb(173,21,25);
 }
 

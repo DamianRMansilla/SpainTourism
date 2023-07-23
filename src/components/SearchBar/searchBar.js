@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import {BsSearch} from "react-icons/bs"
 import "./searchBar.css"
 
