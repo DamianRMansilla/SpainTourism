@@ -10,7 +10,8 @@ export default function Playa(){
             <br></br>
             <br></br>
             <br></br>
-            <MainCities></MainCities>
+            {/* {props.Playa} */}
+            {/* <MainCities></MainCities> */}
         </>
     )
 }

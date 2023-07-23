@@ -9,7 +9,7 @@ import Mallorca from "../../img/Cities/mallorca.jpg";
 // import { Link } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 
-export default function MainCities(){
+export default function MainCities(props){
     var mainCities = [{city: "Madrid", id: 1, class: "madrid-city", route: 'mercadosanmiguel', img: Madrid, playa: 'no'}, 
                        {city: "Barcelona",  id: 2, class: "barcelona-city", route: 'alhambra', img: Barcelona, playa: 'no'}, 
                        {city: "San Sebastian",  id: 3, class: "sansebastian-city", route: 'toledo', img: SanSebastian, playa: 'no'}, 
@@ -28,7 +28,7 @@ export default function MainCities(){
                 {mainCities.map(
                     mainCity =>{
                         return(
-                            <Link key={mainCities.id} to={`/Ciudades/${mainCity.city}#imageCity`}>
+                            <Link to={`/Ciudades/${mainCity.city}#imageCity`} playa={mainCities.playa}>
                                 <div className="destinos">
                                     <div className={`imgDiv ${mainCity.class} city-image-main`}>
                                         {/* <img className="imgDestinos" src={mainCity.img} alt={`${mainCity.city}`}/> */}
