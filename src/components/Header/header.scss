@@ -1,0 +1,124 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 3.5rem;
+    width: 100%;
+    z-index: 10;
+    overflow-x: hidden;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.485);
+    .home{
+        height: 3.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 3%;
+        box-sizing: border-box;
+        padding: 5px;
+        img{
+            margin: auto;
+            height: 100%;
+        }
+    }
+    .headerMenuList{
+        margin: 0 auto;
+        padding: 0;
+        width: 60%;
+        display: flex;
+        box-sizing: border-box;
+        .headerLink{
+            margin: 0 auto;
+            text-decoration: none;
+            color: black;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .headerMenu{
+                font-size: 20px;
+                list-style: none;
+                font-weight: 700;
+                width: 100%;
+                line-height: 3rem;
+                border-bottom: solid #FFF 2px;
+                &:hover{
+                    box-sizing: border-box;
+                    border-bottom: solid rgb(173,21,25) 2px;
+                    color: rgb(173,21,25);
+                }
+            }
+        }
+    }
+    .headerButtonContainer{
+        display: flex;
+        .burger{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+            box-sizing: border-box;
+            padding: 0.7rem;
+            svg{
+                display: block;
+            }
+            button{
+                background-color: white;
+                border: none;
+                font-size: 25px;
+            }
+        }
+        .searchButton{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+            padding: 0.7rem;
+            box-sizing: border-box;
+            button{
+                background-color: white;
+                border: none;
+                font-size: 25px;    
+                svg{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.searchBar{
+    display: flex;
+    box-sizing: border-box;
+    margin: auto;
+    width: 10%;
+}
+
+.searchBar button{
+    background-color: transparent;
+    border: none;
+    font-weight: 700;
+}
+
+.searchBar input{
+    border: none;
+    border-bottom: 1px solid black;
+    display: none;
+}
+
+@media(max-width: 800px){
+    .headerMenuList{
+        display: none!important;
+    }
+}
+
+
+@media (min-width: 1025px){
+    .burger{
+        margin-right: 5%;
+    }
+}

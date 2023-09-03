@@ -3,12 +3,12 @@ h1{
 }
 
 .backTodoElAño{
-    padding-top: 2%;
+    padding-top: 0.5%;
     padding-bottom: 2%;
 }
 
 .todoElAño{
-    margin: 2vh 3%;
+    margin: 0.6rem 2.7rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -76,16 +76,16 @@ h1{
 }
 
 .todoElAñoTitulo{
-    margin: 0;
+    margin: 1rem 0 0 0;
     color: rgb(173,21,25);
     text-align: center;
     font-size: 2rem;
+    font-weight: 100;
 }
 
 .pDisfruta{
-    text-align: center;
-    font-size: 1.3rem;
-    margin-bottom: 1vh;
+    font-size: 1.1rem;
+    margin: 1rem auto 2rem 2.7rem;
 }
 
 
@@ -101,13 +101,12 @@ h1{
     }
     .todoElAño p{
         font-size: 4rem;
-
     }
     .todoElAñoTitulo{
         font-size: 3rem;
     }
     
-    .pDisfruta{
+    /* .pDisfruta{
         font-size: 1.8rem;
-    }
+    } */
 }

@@ -1,0 +1,38 @@
+.beach-main-container{
+    margin: 100px auto 0 auto;
+}
+
+.beach-main-container h1{
+    text-align: center;
+}
+
+.beach-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+}
+
+.playa-item{
+    display: block;
+    width: 18%;
+    margin: 2vh 3vw;
+    text-decoration: none;
+}
+
+.playa-item p{
+    line-height: 2.3rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: 500;
+    overflow: hidden;
+    color: black;
+    text-align: center;
+}
+
+.beach-city-container{
+    height: 26.5rem;
+}

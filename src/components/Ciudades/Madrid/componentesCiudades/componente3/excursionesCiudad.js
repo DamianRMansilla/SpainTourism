@@ -42,7 +42,7 @@ export default function ExcursionesCiudad(){
                                 return(
                                         <Link to=""><div className="excursion">
                                             <img src={tour.image} alt={tour.tour}/>
-                                            <p>{tour.tour}</p>
+                                            <p className="excursion-name">{tour.tour}</p>
                                         </div></Link>
                                 )
                             }

@@ -1,6 +1,5 @@
 import React, {useRef, useEffect} from 'react';
 import "./carousel.css"
-// import img1 from "../../img/invierno.jpg"
 import {IoIosArrowBack} from "react-icons/io"
 import {IoIosArrowForward} from "react-icons/io"
 
@@ -84,36 +83,39 @@ export default function Carousel(){
 
     return(
         <>
-            <div className="slideshowMainContainer">
-                
-                <div className="slideshowContainer" ref={slideshow}>
-                    <div className="slide slide1">
-                        <a href="https://www.infobae.com">
-                            {/*<img src={img1}/>*/}
-                            {/* <p>Madrid</p> */}
-                        </a>
-      
+            <div className='slide-general-container'>
+
+                <div className="slideshowMainContainer">
+                    
+                    <div className="slideshowContainer" ref={slideshow}>
+                        <div className="slide slide1">
+                            <a href="https://www.infobae.com">
+                                {/*<img src={img1}/>*/}
+                                {/* <p>Madrid</p> */}
+                            </a>
+        
+                        </div>
+                        <div className="slide slide2">
+                            <a href="https://www.infobae.com">
+                                {/* <p>Barcelona</p> */}
+                            </a>
+                            
+                        </div>
+                        <div className="slide slide3">
+                            <a href="https://www.infobae.com"></a>
+                            {/*<p>Valencia</p>*/}
+                        </div>
+                        <div className="slide slide4">
+                            <a href="https://www.infobae.com"></a>
+                            {/*<p>Malaga</p>*/}
+                        </div>
                     </div>
-                    <div className="slide slide2">
-                        <a href="https://www.infobae.com">
-                            {/* <p>Barcelona</p> */}
-                        </a>
-                        
+                    <div className="controls">
+                        <button className="slideshowButtons izquierdo" onClick={anterior}><IoIosArrowBack/></button>
+                        <button className="slideshowButtons derecho" onClick={siguiente}><IoIosArrowForward/></button>
                     </div>
-                    <div className="slide slide3">
-                        <a href="https://www.infobae.com"></a>
-                        {/*<p>Valencia</p>*/}
-                    </div>
-                    <div className="slide slide4">
-                        <a href="https://www.infobae.com"></a>
-                        {/*<p>Malaga</p>*/}
-                    </div>
+                    
                 </div>
-                <div className="controls">
-                    <button className="slideshowButtons izquierdo" onClick={anterior}><IoIosArrowBack/></button>
-                    <button className="slideshowButtons derecho" onClick={siguiente}><IoIosArrowForward/></button>
-                </div>
-                
             </div>
             
         </>

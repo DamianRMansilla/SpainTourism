@@ -1,128 +1,204 @@
-.destinosGlobal{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-bottom: 6vh;
+@charset "UTF-8";
+.masVisitadosGlobal {
+  padding: 3rem 1rem 0 1rem;
 }
 
-.destinosGlobal a{
-    text-decoration: none;
-    width: 40%;
-    margin: 2vh 3vw;
+.title {
+  margin: 1rem 0 0 0;
+  color: rgb(173, 21, 25);
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 
-.destinos{
-    text-align: center;
-    color: black;
-    height: 25rem;
+.subtitle1 {
+  font-size: 0.8rem;
+  text-align: center;
 }
 
-.imgDestinos{
-    height: 22rem;
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 6vh;
+}
+.cardContainer a {
+  text-decoration: none;
+  width: 100%;
+  margin: 1rem;
+}
+.cardContainer a .cardImageText {
+  text-align: center;
+  color: black;
+  overflow: hidden;
+  box-shadow: 1px 1px 1rem 0.1rem rgba(10, 10, 10, 0.242);
+  border-radius: 0 0 5px 5px;
+}
+.cardContainer a .cardImageText .imageCardHeight {
+  height: 22rem;
+}
+.cardContainer a .cardImageText p {
+  background-color: #FFF;
+  position: relative;
+  z-index: 5;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  overflow: hidden;
+  border-radius: 0 0 5px 5px;
+  height: 5rem;
+  line-height: 2rem;
 }
 
-.imgDiv{
-    overflow: hidden;
-    height: 22rem;
+@media (min-width: 450px) and (max-width: 640px) {
+  .cardContainer {
+    justify-content: center !important;
+  }
+  .cardContainer a {
+    width: 17rem !important;
+  }
+}
+@media (min-width: 641px) and (max-width: 800px) {
+  .masVisitadosGlobal {
+    padding: 3rem 3rem 0 3rem;
+  }
+  .cardContainer {
+    justify-content: center !important;
+  }
+  .cardContainer a {
+    width: 17rem !important;
+  }
+}
+@media (min-width: 800px) and (max-width: 1200px) {
+  .masVisitadosGlobal {
+    padding: 3rem 6rem 0 6rem !important;
+  }
+  .title {
+    font-size: 2rem !important;
+  }
+  .subtitle1 {
+    font-size: 1.1rem !important;
+    margin: 1rem auto 2rem 1.5rem !important;
+  }
+  .cardContainer {
+    justify-content: space-between !important;
+  }
+  .cardContainer a {
+    width: 17rem !important;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1500px) {
+  .masVisitadosGlobal {
+    padding: 3rem 7rem 0 7rem !important;
+  }
+  .title {
+    font-size: 2rem !important;
+  }
+  .subtitle1 {
+    font-size: 1.1rem !important;
+    margin: 1rem auto 2rem 1.5rem !important;
+  }
+  .cardContainer {
+    justify-content: space-between !important;
+  }
+  .cardContainer a {
+    width: 18rem !important;
+  }
+}
+@media (min-width: 1501px) {
+  .masVisitadosGlobal {
+    padding: 3rem 10rem 0 10rem !important;
+  }
+  .title {
+    font-size: 2rem !important;
+  }
+  .subtitle1 {
+    font-size: 1.1rem !important;
+    margin: 1rem auto 2rem 1.5rem !important;
+  }
+  .cardContainer {
+    justify-content: space-between !important;
+  }
+  .cardContainer a {
+    width: 18rem !important;
+  }
+}
+.madrid-city {
+  background: url("../../img/Cities/madrid1.png");
 }
 
-.destinos:hover > div img{
-    overflow: hidden;
-    transform: scale(1.05);
+.barcelona-city {
+  background: url("../../img/Cities/barcelona.png");
 }
 
-.destinos p{
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.7rem;
-    font-weight: 500;
-    overflow: hidden;
+.sansebastian-city {
+  background: url("../../img/Cities/peineViento.png");
 }
 
-p.santiago{
-    line-height: 1.5rem;
+.malaga-city {
+  background: url("../../img/Cities/malaga.png");
 }
 
-.masVisitados{
-    margin: 6vh 0 0 0;
-    color: rgb(173,21,25);
-    text-align: center;
-    font-size: 2rem;
+.sevilla-city {
+  background: url("../../img/Cities/sevilla.png");
 }
 
-.subtitle1{
-    text-align: center;
-    font-size: 1.3rem;
-    margin-bottom: 1vh;
+.valencia-city {
+  background: url("../../img/Cities/valencia.png");
 }
 
-@media(min-width: 361px) and (max-width: 768px){
-    .destinosGlobal a{
-        width: 25%;
-    }
+.santiagodecompostela-city {
+  background: url("../../img/Cities/catedralSantiagoCompostela.png");
 }
 
-@media(min-width: 769px){
-    .masVisitados{
-        font-size: 3rem;
-    }
-    .subtitle1{
-        font-size: 1.8rem;
-    }
-    .destinosGlobal a{
-        width: 18%;
-    }
-    .imgDestinos{
-        overflow: hidden;
-        transition: transform 1s ease-in-out;
-    }
-    .destinos p{
-        line-height: 3rem;
-    }
+.mallorca-city {
+  background: url("../../img/Cities/mallorca.png");
 }
 
-
-
-.madrid-city{
-    background: url("../../img/Cities/madrid1.jpg");
+.alicante-city {
+  background: url("../../img/Cities/alicante.png");
 }
 
-.barcelona-city{
-    background: url("../../img/Cities/barcelona.jpg")
+.córdoba-city {
+  background: url("../../img/Cities/cordoba.png");
 }
 
-.sansebastian-city{
-    background: url("../../img/Cities/peineViento.jpg")
+.granada-city {
+  background: url("../../img/Cities/granada.png");
 }
 
-.malaga-city{
-    background: url("../../img/Cities/malaga.jpg");
+.cadiz-city {
+  background: url("../../img/Cities/cadiz.png");
 }
 
-.sevilla-city{
-    background: url("../../img/Cities/sevilla.jpg")
+.bilbao-city {
+  background: url("../../img/Cities/bilbao.png");
 }
 
-.valencia-city{
-    background: url("../../img/Cities/valencia.jpg")
+.ibiza-city {
+  background: url("../../img/Cities/ibiza.png");
 }
 
-.santiago-city{
-    background: url("../../img/Cities/catedralSantiagoCompostela.jpg")
+.tenerife-city {
+  background: url("../../img/Cities/tenerife.png");
 }
 
-.mallorca-city{
-    background: url("../../img/Cities/mallorca.jpg")
-}
-.city-image-main{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.segovia-city {
+  background: url("../../img/Cities/segovia.png");
 }
 
-.city-image-main:hover{
-    transform: scale(1.05);
-    transition: 1s;
+.city-image-main {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: scale(1);
+  transition: 0.5s linear;
+}
+
+.city-image-main:hover {
+  transform: scale(1.04);
+  transition: 1s linear;
 }

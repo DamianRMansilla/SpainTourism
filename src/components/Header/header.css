@@ -1,134 +1,122 @@
-.home{
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 3%;
-    box-sizing: border-box;
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 3.5rem;
+  width: 100%;
+  z-index: 10;
+  overflow-x: hidden;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.485);
+}
+.header .home {
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3%;
+  box-sizing: border-box;
+  padding: 5px;
+}
+.header .home img {
+  margin: auto;
+  height: 100%;
+}
+.header .headerMenuList {
+  margin: 0 auto;
+  padding: 0;
+  width: 60%;
+  display: flex;
+  box-sizing: border-box;
+}
+.header .headerMenuList .headerLink {
+  margin: 0 auto;
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .headerMenuList .headerLink .headerMenu {
+  font-size: 20px;
+  list-style: none;
+  font-weight: 700;
+  width: 100%;
+  line-height: 3rem;
+  border-bottom: solid #FFF 2px;
+}
+.header .headerMenuList .headerLink .headerMenu:hover {
+  box-sizing: border-box;
+  border-bottom: solid rgb(173, 21, 25) 2px;
+  color: rgb(173, 21, 25);
+}
+.header .headerButtonContainer {
+  display: flex;
+}
+.header .headerButtonContainer .burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  box-sizing: border-box;
+  padding: 0.7rem;
+}
+.header .headerButtonContainer .burger svg {
+  display: block;
+}
+.header .headerButtonContainer .burger button {
+  background-color: white;
+  border: none;
+  font-size: 25px;
+}
+.header .headerButtonContainer .searchButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  padding: 0.7rem;
+  box-sizing: border-box;
+}
+.header .headerButtonContainer .searchButton button {
+  background-color: white;
+  border: none;
+  font-size: 25px;
+}
+.header .headerButtonContainer .searchButton button svg {
+  display: block;
 }
 
-.header{
-    display: flex;
-    height: 10vh;
-    width: 100%;
-    z-index: 5;
-    overflow-x: hidden;
-    font-family: 'Zen Kaku Gothic Antique', sans-serif;
-    position: fixed;
-    top: 0;
-    background-color: white;
-    overflow: hidden;
+.searchBar {
+  display: flex;
+  box-sizing: border-box;
+  margin: auto;
+  width: 10%;
 }
 
-.header img{
-    margin: auto;
-    height: 100%;
+.searchBar button {
+  background-color: transparent;
+  border: none;
+  font-weight: 700;
 }
 
-.headerMenuUl{
-    margin: auto;
-    padding: 0;
-    width: 60%;
-    display: none;
-    box-sizing: border-box;
+.searchBar input {
+  border: none;
+  border-bottom: 1px solid black;
+  display: none;
 }
 
-.headerMenuUl a{
-    margin: 0 auto;
-    text-decoration: none;
-    color: black;
-    width: 100%;
-    text-align: center;
+@media (max-width: 800px) {
+  .headerMenuList {
+    display: none !important;
+  }
 }
-
-.headerMenu{
-    font-size: 20px;
-    list-style: none;
-    font-weight: 700;
-    width: 100%;
-    line-height: 3rem;
-    border-bottom: solid #FFF 2px;
-}
-
-.headerMenu:hover{
-    box-sizing: border-box;
-    border-bottom: solid rgb(173,21,25) 2px;
-    color: rgb(173,21,25);
-}
-
-.searchBar{
-    display: flex;
-    box-sizing: border-box;
-    margin: auto;
-    width: 10%;
-}
-
-.searchBar button{
-    background-color: transparent;
-    border: none;
-    font-weight: 700;
-}
-
-.searchBar input{
-    border: none;
-    border-bottom: 1px solid black;
-    display: none;
-}
-
-.burger{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-    box-sizing: border-box;
-}
-
-.burger svg{
-    display: block;
-}
-
-.burger button{
-    background-color: white;
-    border: none;
-    font-size: 25px;
-}
-
-.searchButton{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
+@media (min-width: 1025px) {
+  .burger {
     margin-right: 5%;
-    box-sizing: border-box;
-}
-
-.searchButton svg{
-    display: block;
-}
-
-.searchButton button{
-    background-color: white;
-    border: none;
-    font-size: 25px;
-
-}
-
-.tituloPagina{
-    width: 80%;
-    text-align: center;
-    align-self: center;
-}
-
-@media (min-width: 1025px){
-    .headerMenuUl{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .burger{
-        margin-right: 5%;
-    }
-    .tituloPagina{
-        display: none;
-    }
+  }
 }

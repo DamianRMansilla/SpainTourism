@@ -1,0 +1,140 @@
+.accommodation-main-container{
+    padding-top: 3.5rem;
+}
+
+.accommodation-container{
+    padding: 0 8rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
+}
+
+.accommodation-title{
+    text-align: center;
+}
+
+.accommodation-item{
+    text-decoration: none;
+    box-shadow: 1px 1px 1rem 0.1rem rgba(10, 10, 10, 0.242);
+    border-radius: 0 0 5px 5px;
+    width: 16rem!important;
+    margin-bottom: 4rem;
+}
+
+.hotel-image{
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 16rem;
+    width: 16rem;
+}
+
+.riu-plaza-españa{
+    background-image: url('../../../img/Hotels/madrid-riu-plaza-españa.jpg');
+}
+
+.four-seasons{
+    background-image: url('../../../img/Hotels/madrid-four-seasons.jpg');
+}
+
+.pestana-cr7-gran-vía{
+    background-image: url('../../../img/Hotels/madrid-pestana-cr7-gran-vía.jpg');
+}
+
+.hyatt-centric-gran-vía{
+    background-image: url('../../../img/Hotels/madrid-hyatt-centric-gran-vía.jfif');
+}
+
+.vp-plaza-españa-design{
+    background-image: url('../../../img/Hotels/VP-plaza-españa-design.png');
+}
+
+.barcelo-torre-de-madrid{
+    background-image: url('../../../img/Hotels/madrid-barcelo-torre-de-madrid.jpg');
+}
+
+.iberostar-las-letras-gran-vía{
+    background-image: url('../../../img/Hotels/madrid-iberostar-las-letras-gran-vía.jpg');
+}
+
+.accommodation-info{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    padding: 1rem;
+    border-radius: 0 0 5px 5px;
+}
+
+.accommodation-city{
+    font-size: 12px;
+    color: rgb(173,21,25);
+}
+
+.accommodation-name{
+    font-size: 1.4rem;
+    color: black;
+}
+
+.accommodation-address{
+    color: black;
+}
+
+.accommodation-category{
+    color: goldenrod;
+}
+
+.filters{
+    margin-bottom: 2rem;
+}
+
+.form-accommodation-filter{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 6rem
+}
+
+.form-accommodation-filter select{
+    width: 10rem;
+    line-height: 2rem;
+    height: 2rem;
+    padding-left: 1rem;
+}
+
+.form-accommodation-filter select option{
+    line-height: 2rem;
+    height: 2rem;
+}
+
+.form-accommodation-filter select :focus{
+    outline: none;
+}
+
+.filters{
+    margin-top: 6rem;
+}
+
+.filter-list{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+.filter-list .filter-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    padding: 0.4rem;
+    border-radius: 20px;
+    box-shadow: 0 0 6px rgba(81, 81, 81, 0.611);
+    border: none;
+}
+
+.filter-text{
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-right: 2rem;
+}

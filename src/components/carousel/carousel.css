@@ -1,3 +1,10 @@
+.slide-general-container{
+    height: 28rem;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+}
+
 .slideshowMainContainer{
     width: 60vw;
     height: 40vh;
@@ -103,7 +110,7 @@
 }
 
 @media(max-width: 768px){
-    .slideshowMainContainer{
+    .slide-general-container{
         display: none;
     }
 }

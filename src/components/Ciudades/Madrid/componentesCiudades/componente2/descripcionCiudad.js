@@ -23,10 +23,10 @@ export default function DescripcionCiudad(){
                 <div className="cityButtons">
                     <p className="desc-title">Información sobre <strong>{city}</strong></p>
                     <ul className="button-list">
-                        <Link className="cityButton" to="/">
+                        <Link className="cityButton" to={`${city}/Alojamiento#AccommodationTitle`}>
                             <li><i class="fa-solid fa-bed"></i>Hoteles y alojamientos.</li>
                         </Link>
-                        <Link className="cityButton" to="/">
+                        <Link className="cityButton" to={`${city}/Tours`}>
                             <li><i class="fa-solid fa-bus"></i>Paseos, visitas y excursiones.</li>
                         </Link>
                         <Link className="cityButton" to="/">

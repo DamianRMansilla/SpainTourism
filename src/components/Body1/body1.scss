@@ -1,0 +1,41 @@
+body{
+    background-color: #f4f4f43f;
+}
+
+.body1{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../img/madrid.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 3.5rem;
+}
+
+.lema{
+    margin: 0;
+    font-size: 3rem;
+    font-family:'Ephesis', cursive;
+    font-weight: 550;
+    color: white;
+    text-align: center;
+}
+
+@media(min-width: 361px) and (max-width: 768px){
+    .lema{
+        font-size: 4rem
+    }
+}
+
+@media(min-width: 769px){
+    .lema{
+        font-size: 6rem;
+    }
+    .body1{
+        background-position:center;
+
+    }
+}

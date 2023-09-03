@@ -4,9 +4,10 @@
 
 h1.que-comer-ciudad{
     text-align: center;
-    color: rgb(173,21,25);
+    color: #000;
     padding-top: 8vh;
     margin: 0;
+    font-weight: 400;
 }
 
 .adit-info{

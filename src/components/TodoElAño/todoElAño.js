@@ -5,7 +5,7 @@ export default function TodoElAño(){
     return(
         <div className="backTodoElAño">
             <h1 className="todoElAñoTitulo">España todo el año</h1>
-            <p className="pDisfruta">Disfruta España todas las estaciones</p>
+            <p className="pDisfruta">Verano, otoño, invierno o primavera. Disfruta España todas las estaciones</p>
             <div className="todoElAño">
                 <Link to="./TodoElAño/Invierno" className="invierno"><div><p>Invierno</p></div></Link>
                 <Link to="./TodoElAño/Primavera" className="primavera"><div><p>Primavera</p></div></Link>

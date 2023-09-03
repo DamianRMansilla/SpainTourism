@@ -1,0 +1,32 @@
+.citiesMainContainer {
+  padding: 4rem 0 0 0;
+  background-color: #eee;
+}
+.citiesMainContainer .title {
+  padding-top: 1rem;
+  text-align: center;
+}
+.citiesMainContainer .cardContainer {
+  padding-top: 2rem;
+}
+
+@media (min-width: 641px) and (max-width: 800px) {
+  .citiesMainContainer {
+    padding: 3.5rem 3rem 0 3rem;
+  }
+}
+@media (min-width: 800px) and (max-width: 1200px) {
+  .citiesMainContainer {
+    padding: 3.5rem 6rem 0 6rem !important;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1500px) {
+  .citiesMainContainer {
+    padding: 3.5rem 7rem 0 7rem !important;
+  }
+}
+@media (min-width: 1501px) {
+  .citiesMainContainer {
+    padding: 3rem 10rem 0 10rem !important;
+  }
+}
