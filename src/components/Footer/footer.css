@@ -1,5 +1,5 @@
 .footer{
-    background-color: rgb(173,21,25);
+    background-color: rgb(49, 108, 137);
     display: flex;
 }
 
@@ -16,7 +16,7 @@
     width: 8%;
     height: 16%;
     margin: 2vh 2vw 2vh 0;
-    color: rgb(173,21,25);
+    color: rgb(49, 108, 137);
 }
 
 .socialNetworkLogo svg{

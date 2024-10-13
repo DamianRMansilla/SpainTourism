@@ -4,10 +4,10 @@
 
 .title{
     margin: 1rem 0 0 0;
-    color: rgb(173,21,25);
+    color: rgb(78, 140, 171);
     text-align: center;
     font-size: 1.4rem;
-    font-weight: 400;
+    // font-weight: 400;
 }
 .subtitle1{
     font-size: 0.8rem;
@@ -29,7 +29,7 @@
             box-shadow: 1px 1px 1rem 0.1rem rgba(10, 10, 10, 0.242);
             border-radius: 0 0 5px 5px;
             .imageCardHeight{
-                height: 22rem;
+                height: 26rem;
             }
             p{
                 background-color: #FFF;
@@ -43,8 +43,9 @@
                 font-weight: 500;
                 overflow: hidden;
                 border-radius: 0 0 5px 5px;
-                height: 5rem;
+                height: 3rem;
                 line-height: 2rem;
+                padding: 1rem 0.5rem;
             }
         }
     }
@@ -61,7 +62,7 @@
 
 @media(min-width: 641px) and (max-width: 800px){
     .masVisitadosGlobal{
-        padding: 3rem 3rem 0 3rem;
+        padding: 4rem 3rem 0 3rem;
     }
     .cardContainer{
         justify-content: center!important;
@@ -73,14 +74,14 @@
 
 @media(min-width: 800px) and (max-width: 1200px){
     .masVisitadosGlobal{
-        padding: 3rem 6rem 0 6rem!important;
+        padding: 4rem 3rem 0 3rem!important;
     }
     .title{
-        font-size: 2rem!important;
+        font-size: 3rem!important;
     }
     .subtitle1{
         font-size: 1.1rem!important;
-        margin: 1rem auto 2rem 1.5rem!important;
+        margin: 1rem auto 4rem 1.5rem!important;
     }
     .cardContainer{
         justify-content: space-between!important;
@@ -90,40 +91,41 @@
     }
 }
 
+
 @media(min-width: 1201px) and (max-width: 1500px){
     .masVisitadosGlobal{
-        padding: 3rem 7rem 0 7rem!important;
+        padding: 4rem 4rem 0 4rem!important;
     }
     .title{
-        font-size: 2rem!important;
+        font-size: 3rem!important;
     }
     .subtitle1{
         font-size: 1.1rem!important;
-        margin: 1rem auto 2rem 1.5rem!important;
+        margin: 1rem auto 4rem 1.5rem!important;
     }
     .cardContainer{
         justify-content: space-between!important;
         a{
-            width: 18rem!important;
+            width: 20%!important;
         }
     }
 }
 
 @media(min-width: 1501px){
     .masVisitadosGlobal{
-        padding: 3rem 10rem 0 10rem!important;
+        padding: 4rem 6rem 0 6rem!important;
     }
     .title{
         font-size: 2rem!important;
     }
     .subtitle1{
         font-size: 1.1rem!important;
-        margin: 1rem auto 2rem 1.5rem!important;
+        margin: 1rem auto 4rem 1.5rem!important;
     }
     .cardContainer{
         justify-content: space-between!important;
         a{
-            width: 18rem!important;
+            width: 20%!important;
         }
     }
 }
@@ -201,7 +203,13 @@
     transition: 0.5s linear;
 }
 
-.city-image-main:hover{
-    transform: scale(1.04);
-    transition: 1s linear;
+.cardImageText{
+    &:hover{
+        box-shadow: 1px 1px 1rem 0.1rem rgba(14, 7, 44, 0.655)!important;
+        > .city-image-main{
+            transform: scale(1.07);
+            transition: 0.6s linear;
+        }
+    }
 }
+

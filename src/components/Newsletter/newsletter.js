@@ -16,11 +16,11 @@ export default function Newsletter(){
                 <h2 className="titulo">¡Suscríbete a nuestro newsletter con toda la ultima informacion turística!</h2>
                 <div className="formInfo">
                     <div className="formInput">
-                        <label for="nombre" className="name">Ingrese nombre y apellido</label>
+                        <label htmlFor="nombre" className="name">Ingrese nombre y apellido</label>
                         <input type="text" id="nombre"></input>
                     </div>
                     <div className="formInput">
-                        <label for="mail" className="mail">Ingrese su correo</label>
+                        <label htmlFor="mail" className="mail">Ingrese su correo</label>
                         <input type="mail" id="mail"></input>
                     </div>
                 </div>

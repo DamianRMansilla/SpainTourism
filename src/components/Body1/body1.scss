@@ -1,5 +1,9 @@
 body{
-    background-color: #f4f4f43f;
+    background: linear-gradient(rgba(255, 249, 251, 0.899), rgba(255, 249, 251, 0.899)), url("../../img/wave.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .body1{

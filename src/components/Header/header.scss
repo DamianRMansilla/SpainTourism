@@ -27,42 +27,93 @@
     .headerMenuList{
         margin: 0 auto;
         padding: 0;
-        width: 60%;
         display: flex;
         box-sizing: border-box;
         .headerLink{
             margin: 0 auto;
             text-decoration: none;
             color: black;
-            width: 100%;
             text-align: center;
             display: flex;
             justify-content: center;
             align-items: center;
             .headerMenu{
-                font-size: 20px;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 16px;
                 list-style: none;
-                font-weight: 700;
+                font-weight: 500;
                 width: 100%;
-                line-height: 3rem;
-                border-bottom: solid #FFF 2px;
+                line-height: 3.5rem;
+                height: inherit;
+                padding: 0 1rem;
+                display: flex;
+                align-items: center;
+                .fa-solid{
+                    padding-left: 0.5rem;
+                }
+                .fa-chevron-up{
+                    display: none;
+                }
+                &:hover{
+                    > .headerMenuListDisplay{
+                        display: flex;
+                    }
+                    > .fa-chevron-down{
+                        display: none;
+                    }
+                    > .fa-chevron-up{
+                        display: block;
+                    }
+                }
+                .headerMenuListDisplay{
+                    display: none;
+                    position: fixed;
+                    top: 3.5rem;
+                    left: 0;
+                    background-color: rgba(255, 255, 255, 0.932);
+                    z-index: 10;
+                    width: 100vw;
+                    height: 20rem;
+                    color: #000;
+                    padding: 0;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    list-style-type: none;
+                    a{
+                        color: #000;
+                        text-decoration: none;
+                        &:hover{
+                            background-color: #444343a5;
+                            color: #FFF;
+                        }
+                        .headerDestinos{
+                            display: contents;
+
+                        }
+                    }
+                }
                 &:hover{
                     box-sizing: border-box;
-                    border-bottom: solid rgb(173,21,25) 2px;
-                    color: rgb(173,21,25);
+                    color: #FFF;
+                    background-color: #444343a5;
                 }
             }
         }
     }
     .headerButtonContainer{
         display: flex;
-        .burger{
-            display: flex;
+        position: relative;
+        width: 10rem;
+        .menuButton{
+            display: none;
             justify-content: center;
             align-items: center;
             z-index: 10;
             box-sizing: border-box;
             padding: 0.7rem;
+            position: absolute;
+            height: 3.5rem;
+            right: 0;
             svg{
                 display: block;
             }
@@ -79,12 +130,20 @@
             z-index: 10;
             padding: 0.7rem;
             box-sizing: border-box;
-            button{
-                background-color: white;
-                border: none;
-                font-size: 25px;    
-                svg{
-                    display: block;
+            position: absolute;
+            right: 4rem;
+            height: 3.5rem;
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                button{
+                    background-color: white;
+                    border: none;
+                    font-size: 25px;    
+                    svg{
+                        display: block;
+                    }
                 }
             }
         }
@@ -113,6 +172,9 @@
 @media(max-width: 800px){
     .headerMenuList{
         display: none!important;
+    }
+    .menuButton{
+        display: flex!important;
     }
 }
 

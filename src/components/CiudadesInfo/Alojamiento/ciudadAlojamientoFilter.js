@@ -19,6 +19,7 @@ export default function AlojamientoFilter(){
                         <option value="3estrellas" id="3estrellas" className="select-option">3 estrellas</option>
                         <option value="2estrellas" id="2estrellas" className="select-option">2 estrellas</option>
                         <option value="1estrella" id="1estrella" className="select-option">1 estrella</option>
+                        <option value="boutique" id="boutique" className="select-option">Boutique</option>
                     </select>
                 </form>
                 {filter && <h2 className="mt-3">{filter}</h2>}

@@ -28,7 +28,6 @@
 .header .headerMenuList {
   margin: 0 auto;
   padding: 0;
-  width: 60%;
   display: flex;
   box-sizing: border-box;
 }
@@ -36,40 +35,89 @@
   margin: 0 auto;
   text-decoration: none;
   color: black;
-  width: 100%;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .header .headerMenuList .headerLink .headerMenu {
-  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
   list-style: none;
-  font-weight: 700;
+  font-weight: 500;
   width: 100%;
-  line-height: 3rem;
-  border-bottom: solid #FFF 2px;
+  line-height: 3.5rem;
+  height: inherit;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+}
+.header .headerMenuList .headerLink .headerMenu .fa-solid {
+  padding-left: 0.5rem;
+}
+.header .headerMenuList .headerLink .headerMenu .fa-chevron-up {
+  display: none;
+}
+.header .headerMenuList .headerLink .headerMenu:hover > .headerMenuListDisplay {
+  display: flex;
+}
+.header .headerMenuList .headerLink .headerMenu:hover > .fa-chevron-down {
+  display: none;
+}
+.header .headerMenuList .headerLink .headerMenu:hover > .fa-chevron-up {
+  display: block;
+}
+.header .headerMenuList .headerLink .headerMenu .headerMenuListDisplay {
+  display: none;
+  position: fixed;
+  top: 3.5rem;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.932);
+  z-index: 10;
+  width: 100vw;
+  height: 20rem;
+  color: #000;
+  padding: 0;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.header .headerMenuList .headerLink .headerMenu .headerMenuListDisplay a {
+  color: #000;
+  text-decoration: none;
+}
+.header .headerMenuList .headerLink .headerMenu .headerMenuListDisplay a:hover {
+  background-color: rgba(68, 67, 67, 0.6470588235);
+  color: #FFF;
+}
+.header .headerMenuList .headerLink .headerMenu .headerMenuListDisplay a .headerDestinos {
+  display: contents;
 }
 .header .headerMenuList .headerLink .headerMenu:hover {
   box-sizing: border-box;
-  border-bottom: solid rgb(173, 21, 25) 2px;
-  color: rgb(173, 21, 25);
+  color: #FFF;
+  background-color: rgba(68, 67, 67, 0.6470588235);
 }
 .header .headerButtonContainer {
   display: flex;
+  position: relative;
+  width: 10rem;
 }
-.header .headerButtonContainer .burger {
-  display: flex;
+.header .headerButtonContainer .menuButton {
+  display: none;
   justify-content: center;
   align-items: center;
   z-index: 10;
   box-sizing: border-box;
   padding: 0.7rem;
+  position: absolute;
+  height: 3.5rem;
+  right: 0;
 }
-.header .headerButtonContainer .burger svg {
+.header .headerButtonContainer .menuButton svg {
   display: block;
 }
-.header .headerButtonContainer .burger button {
+.header .headerButtonContainer .menuButton button {
   background-color: white;
   border: none;
   font-size: 25px;
@@ -81,13 +129,21 @@
   z-index: 10;
   padding: 0.7rem;
   box-sizing: border-box;
+  position: absolute;
+  right: 4rem;
+  height: 3.5rem;
 }
-.header .headerButtonContainer .searchButton button {
+.header .headerButtonContainer .searchButton div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .headerButtonContainer .searchButton div button {
   background-color: white;
   border: none;
   font-size: 25px;
 }
-.header .headerButtonContainer .searchButton button svg {
+.header .headerButtonContainer .searchButton div button svg {
   display: block;
 }
 
@@ -113,6 +169,9 @@
 @media (max-width: 800px) {
   .headerMenuList {
     display: none !important;
+  }
+  .menuButton {
+    display: flex !important;
   }
 }
 @media (min-width: 1025px) {

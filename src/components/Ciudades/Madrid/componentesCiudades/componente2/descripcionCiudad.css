@@ -22,7 +22,7 @@
     margin: 4vh auto auto auto;
     box-sizing: border-box;
     border-radius: 20px;
-    width: 45vw;
+    width: 40vw;
     background-color: #eee;
     box-shadow: 0 0 10px rgb(191, 191, 191);
 }
@@ -69,7 +69,7 @@
 
 @media(min-width: 769px){
     .cityDescription{
-        width: 40%;
+        width: 50%;
         margin: 0 0 5% 3%;
     }
     .cityMain{

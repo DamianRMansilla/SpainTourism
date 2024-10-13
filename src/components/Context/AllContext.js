@@ -38,7 +38,11 @@ export default function Accommodation({children}){
     {city: 'Madrid', accommodation: 'VP Plaza España Design', address: 'Plaza de España 5', url: 'https://www.plazaespana-hotel.com/', category: 'cat-4star', id: 'accom5'},
     {city: 'Madrid', accommodation: 'Barcelo Torre de Madrid', address: 'Plaza de España 18', url: 'https://www.barcelo.com/es-es/barcelo-torre-de-madrid/', category: 'cat-4star', id: 'accom6'},
     {city: 'Madrid', accommodation: 'Iberostar Las Letras Gran Vía', address: 'Direccion hotel 2', url: 'www.prueba2.com', category: 'cat-4star', id: 'accom7'},
-    {city: 'Barcelona', accommodation: 'Hotel Thompson', address: 'Direccion hotel 2', url: 'www.prueba3.com', category: 'cat-5star', id: 'accom8'},]
+    {city: 'Madrid', accommodation: 'Only YOU Boutique Hotel', address: 'Calle de Barquillo 21', url: 'https://www.onlyyouhotels.com', category: 'boutique', id: 'accom8'},
+    {city: 'Madrid', accommodation: 'Madrid Gran Vía 25 by Melia', address: 'Calle Gran Vía 25', url: 'https://www.melia.com/es/hoteles/espana/madrid/hotel-madrid-gran-via-25-by-melia', category: 'cat-3star', id: 'accom9'},
+    {city: 'Madrid', accommodation: 'Rosewood Villa Magna', address: 'Paseo de la Castellana 22', url: 'https://www.rosewoodhotels.com/en/villa-magna', category: 'cat-5star', id: 'accom10'},
+    {city: 'Madrid', accommodation: 'ibis Madrid Aeropuerto Barajas', address: 'Av. General 49', url: 'https://all.accor.com/hotel/3753/index.es.shtml', category: 'cat-2star', id: 'accom11'},
+    {city: 'Barcelona', accommodation: 'Hotel Thompson', address: 'Direccion hotel 2', url: 'www.prueba3.com', category: 'cat-5star', id: 'accom12'},]
     
     return (
         <accommodationContext.Provider value={accommodation}>
