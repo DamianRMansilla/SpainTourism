@@ -16,18 +16,9 @@
             margin-right: 2rem;
             height: fit-content;
             .filter-form-list{
-                button{
-                    display: block;
-                    margin: 1rem auto auto auto;
-                    min-width: calc(100% - 2rem);
-                    padding: 0.7rem;
-                    text-transform: uppercase;
-                    border: none;
-                    // border: solid 2px rgb(40, 88, 111);
-                    border-radius: 3px;
-                    background: rgb(49, 108, 137);
-                    color: #FFF;
-                    font-weight: 500;
+                h3{
+                    padding-left: 1rem;
+                    margin-bottom: 0.1rem;
                 }
                 .filter-category{
                     padding: 1rem;
@@ -56,17 +47,32 @@
                                 font-size: 0.9rem;
                                 font-family: "Roboto", sans-serif;
                             }
-                            // .span-tickbox{
-                            //     background-color: transparent;
-                            //     height: 0.85rem;
-                            //     width: 0.85rem;
-                            //     margin: 0.1rem 0.5rem 0.1rem 0.2rem;
-                            //     border: solid 2px rgb(49, 108, 137);
-                            //     border-radius: 3px;
-                            // }
-                            // .span-tickbox-text{
-                            //     font-size: 0.9rem;
-                            // }
+                        }
+                        .span-tickbox{
+                            background-color: transparent;
+                            height: 0.85rem;
+                            width: 0.85rem;
+                            margin: 0.1rem 0.5rem 0.1rem 0.2rem;
+                            border: solid 1px rgb(49, 108, 137);
+                            border-radius: 3px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            svg{
+                                fill: transparent;
+                                height: 0.75rem;
+                                width: 0.75rem;
+                                pointer-events: none;
+                            }
+                        }
+                        .chosenTickbox{
+                            background: rgb(49, 108, 137);
+                            svg{
+                                fill: #FFF;
+                            }
+                        }
+                        .span-tickbox-text{
+                            font-size: 0.9rem;
                         }
                         .span-quantity{
                             font-size: 1rem;
@@ -80,44 +86,75 @@
                 }
             }
         }
-        .accommodation-container{
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            padding-bottom: 4rem;
-            .accommodation-item{
-                text-decoration: none;
-                box-shadow: 1px 1px 1rem 0.1rem rgba(10, 10, 10, 0.242);
-                border-radius: 0 0 5px 5px;
-                width: 16rem!important;
-                margin-bottom: 4rem;
-                .hotel-image{
-                    background-position: bottom;
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    height: 16rem;
-                    width: 16rem;
+        .available-accomodation{
+            width: 100%;
+            .chips{
+                margin-bottom: 2rem;
+                display: flex;
+                align-items: center;
+                .chip{
+                    padding: 0.3rem 1rem 0.4rem 1rem;
+                    border: solid 2px rgba(74, 160, 203);
+                    border-radius: 20px;
+                    margin-left: 0.5rem;
+                    // display: none;
+                    justify-content: center;
+                    align-items: center;
+                    line-height: 1.5rem;
+                    height: 1.5rem;
+                    color: rgb(74, 160, 203);
+                    vertical-align: middle;
+                    i{
+                        margin-left: 0.5rem;
+                        height: 1.5rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: 5px;
+                        font-size: 1.1rem;
+                        pointer-events: none;
+                    }
                 }
-                .accommodation-info{
-                    display: flex;
-                    flex-direction: column;
-                    background-color: #FFF;
-                    padding: 1rem;
+            }
+            .accommodation-container{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                padding-bottom: 4rem;
+                .accommodation-item{
+                    text-decoration: none;
+                    box-shadow: 1px 1px 1rem 0.1rem rgba(10, 10, 10, 0.242);
                     border-radius: 0 0 5px 5px;
-                    min-height: 118px;
-                    .accommodation-city{
-                        font-size: 12px;
-                        color: rgb(173,21,25);
+                    width: 16rem!important;
+                    margin-bottom: 4rem;
+                    .hotel-image{
+                        background-position: bottom;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        height: 16rem;
+                        width: 16rem;
                     }
-                    .accommodation-name{
-                        font-size: 1.4rem;
-                        color: black;
-                    }
-                    .accommodation-address{
-                        color: black;
-                    }
-                    .accommodation-category{
-                        color: goldenrod;
+                    .accommodation-info{
+                        display: flex;
+                        flex-direction: column;
+                        background-color: #FFF;
+                        padding: 1rem;
+                        border-radius: 0 0 5px 5px;
+                        min-height: 118px;
+                        .accommodation-city{
+                            font-size: 12px;
+                            color: rgb(173,21,25);
+                        }
+                        .accommodation-name{
+                            font-size: 1.4rem;
+                            color: black;
+                        }
+                        .accommodation-address{
+                            color: black;
+                        }
+                        .accommodation-category{
+                            color: goldenrod;
+                        }
                     }
                 }
             }
@@ -127,4 +164,8 @@
 
 .dispNone{
     display: none;
+}
+
+.dispFlex{
+    display: flex;
 }

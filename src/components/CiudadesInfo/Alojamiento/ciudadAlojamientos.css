@@ -18,17 +18,9 @@
   height: -moz-fit-content;
   height: fit-content;
 }
-.accommodation-main-container .accommodation-filter-data .filters .filter-form-list button {
-  display: block;
-  margin: 1rem auto auto auto;
-  min-width: calc(100% - 2rem);
-  padding: 0.7rem;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 3px;
-  background: rgb(49, 108, 137);
-  color: #FFF;
-  font-weight: 500;
+.accommodation-main-container .accommodation-filter-data .filters .filter-form-list h3 {
+  padding-left: 1rem;
+  margin-bottom: 0.1rem;
 }
 .accommodation-main-container .accommodation-filter-data .filters .filter-form-list .filter-category {
   padding: 1rem;
@@ -60,6 +52,32 @@
   font-size: 0.9rem;
   font-family: "Roboto", sans-serif;
 }
+.accommodation-main-container .accommodation-filter-data .filters .filter-form-list .filter-category .label-input-container .span-tickbox {
+  background-color: transparent;
+  height: 0.85rem;
+  width: 0.85rem;
+  margin: 0.1rem 0.5rem 0.1rem 0.2rem;
+  border: solid 1px rgb(49, 108, 137);
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.accommodation-main-container .accommodation-filter-data .filters .filter-form-list .filter-category .label-input-container .span-tickbox svg {
+  fill: transparent;
+  height: 0.75rem;
+  width: 0.75rem;
+  pointer-events: none;
+}
+.accommodation-main-container .accommodation-filter-data .filters .filter-form-list .filter-category .label-input-container .chosenTickbox {
+  background: rgb(49, 108, 137);
+}
+.accommodation-main-container .accommodation-filter-data .filters .filter-form-list .filter-category .label-input-container .chosenTickbox svg {
+  fill: #FFF;
+}
+.accommodation-main-container .accommodation-filter-data .filters .filter-form-list .filter-category .label-input-container .span-tickbox-text {
+  font-size: 0.9rem;
+}
 .accommodation-main-container .accommodation-filter-data .filters .filter-form-list .filter-category .label-input-container .span-quantity {
   font-size: 1rem;
   color: rgba(0, 0, 0, 0.8196078431);
@@ -68,27 +86,57 @@
 .accommodation-main-container .accommodation-filter-data .filters .filter-form-list .last-filter {
   border-bottom: none;
 }
-.accommodation-main-container .accommodation-filter-data .accommodation-container {
+.accommodation-main-container .accommodation-filter-data .available-accomodation {
+  width: 100%;
+}
+.accommodation-main-container .accommodation-filter-data .available-accomodation .chips {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+.accommodation-main-container .accommodation-filter-data .available-accomodation .chips .chip {
+  padding: 0.3rem 1rem 0.4rem 1rem;
+  border: solid 2px rgb(74, 160, 203);
+  border-radius: 20px;
+  margin-left: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5rem;
+  height: 1.5rem;
+  color: rgb(74, 160, 203);
+  vertical-align: middle;
+}
+.accommodation-main-container .accommodation-filter-data .available-accomodation .chips .chip i {
+  margin-left: 0.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  font-size: 1.1rem;
+  pointer-events: none;
+}
+.accommodation-main-container .accommodation-filter-data .available-accomodation .accommodation-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   padding-bottom: 4rem;
 }
-.accommodation-main-container .accommodation-filter-data .accommodation-container .accommodation-item {
+.accommodation-main-container .accommodation-filter-data .available-accomodation .accommodation-container .accommodation-item {
   text-decoration: none;
   box-shadow: 1px 1px 1rem 0.1rem rgba(10, 10, 10, 0.242);
   border-radius: 0 0 5px 5px;
   width: 16rem !important;
   margin-bottom: 4rem;
 }
-.accommodation-main-container .accommodation-filter-data .accommodation-container .accommodation-item .hotel-image {
+.accommodation-main-container .accommodation-filter-data .available-accomodation .accommodation-container .accommodation-item .hotel-image {
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
   height: 16rem;
   width: 16rem;
 }
-.accommodation-main-container .accommodation-filter-data .accommodation-container .accommodation-item .accommodation-info {
+.accommodation-main-container .accommodation-filter-data .available-accomodation .accommodation-container .accommodation-item .accommodation-info {
   display: flex;
   flex-direction: column;
   background-color: #FFF;
@@ -96,21 +144,25 @@
   border-radius: 0 0 5px 5px;
   min-height: 118px;
 }
-.accommodation-main-container .accommodation-filter-data .accommodation-container .accommodation-item .accommodation-info .accommodation-city {
+.accommodation-main-container .accommodation-filter-data .available-accomodation .accommodation-container .accommodation-item .accommodation-info .accommodation-city {
   font-size: 12px;
   color: rgb(173, 21, 25);
 }
-.accommodation-main-container .accommodation-filter-data .accommodation-container .accommodation-item .accommodation-info .accommodation-name {
+.accommodation-main-container .accommodation-filter-data .available-accomodation .accommodation-container .accommodation-item .accommodation-info .accommodation-name {
   font-size: 1.4rem;
   color: black;
 }
-.accommodation-main-container .accommodation-filter-data .accommodation-container .accommodation-item .accommodation-info .accommodation-address {
+.accommodation-main-container .accommodation-filter-data .available-accomodation .accommodation-container .accommodation-item .accommodation-info .accommodation-address {
   color: black;
 }
-.accommodation-main-container .accommodation-filter-data .accommodation-container .accommodation-item .accommodation-info .accommodation-category {
+.accommodation-main-container .accommodation-filter-data .available-accomodation .accommodation-container .accommodation-item .accommodation-info .accommodation-category {
   color: goldenrod;
 }
 
 .dispNone {
   display: none;
+}
+
+.dispFlex {
+  display: flex;
 }
