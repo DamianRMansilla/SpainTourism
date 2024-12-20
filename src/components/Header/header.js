@@ -7,6 +7,10 @@ import Sidebar from "../Sidebar/sidebar";
 import SearchBar from '../SearchBar/searchBar';
 import Logo from '../../img/logo_espana_menu.jpg'
 import { useEffect } from 'react';
+import ReactDOM from 'react-dom'
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 export default function Header(){
     const ref = useRef(null);
@@ -34,8 +38,8 @@ export default function Header(){
                 <ul className="headerMenuList">
                     <span className='headerLink' to="/Ciudades">
                         <li className="headerMenu">Destinos
-                            <i class="fa-solid fa-chevron-down"></i>
-                            <i class="fa-solid fa-chevron-up"></i>
+                            <FontAwesomeIcon icon={faChevronDown} />
+                            <FontAwesomeIcon icon={faChevronUp} />
                             <ul className='headerMenuListDisplay'>
                                 <Link to="/Ciudades/Madrid"><li className="headerDestinos">Madrid</li></Link>
                                 <Link to="/Ciudades/Barcelona"><li className="headerDestinos">Barcelona</li></Link>

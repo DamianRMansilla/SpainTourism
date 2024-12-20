@@ -24,8 +24,6 @@ import Playa from './components/Playa/playa';
 import CityAccomodation from './components/CiudadesInfo/Alojamiento/ciudadAlojamientos';
 import CityTours from './components/CiudadesInfo/Excursiones/ciudadExcursiones';
 
-
-
 export const cityContext = React.createContext();
 
 

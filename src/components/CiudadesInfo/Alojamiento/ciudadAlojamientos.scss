@@ -88,6 +88,9 @@
         }
         .available-accomodation{
             width: 100%;
+            h4{
+                font-size: 1.2rem;
+            }
             .chips{
                 margin-bottom: 2rem;
                 display: flex;
@@ -104,9 +107,12 @@
                     height: 1.5rem;
                     color: rgb(74, 160, 203);
                     vertical-align: middle;
-                    i{
+                    &:hover{
+                        cursor: pointer;
+                    }
+                    .icon{
                         margin-left: 0.5rem;
-                        height: 1.5rem;
+                        height: 1rem;
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -118,7 +124,7 @@
             }
             .accommodation-container{
                 display: flex;
-                justify-content: space-between;
+                justify-content: flex-start;
                 flex-wrap: wrap;
                 padding-bottom: 4rem;
                 .accommodation-item{
@@ -126,7 +132,7 @@
                     box-shadow: 1px 1px 1rem 0.1rem rgba(10, 10, 10, 0.242);
                     border-radius: 0 0 5px 5px;
                     width: 16rem!important;
-                    margin-bottom: 4rem;
+                    margin: 0 0.5rem 4rem 0.5rem;
                     .hotel-image{
                         background-position: bottom;
                         background-size: cover;
@@ -151,6 +157,7 @@
                         }
                         .accommodation-address{
                             color: black;
+                            font-size: 0.8rem;
                         }
                         .accommodation-category{
                             color: goldenrod;

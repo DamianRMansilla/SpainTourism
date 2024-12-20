@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 export const allContexts = React.createContext();
 export const accommodationContext = React.createContext();
 export const tourContext = React.createContext();
@@ -31,18 +31,20 @@ export function AllContexts({children}){
 }
 
 export default function Accommodation({children}){
-    var accommodation = [{city: 'Madrid', accommodation: 'Riu Plaza España', address: 'Calle Gran Vía 84', url: 'www.prueba.com', category: 'cat-5star', id: 'accom1'},
-    {city: 'Madrid', accommodation: 'Four Seasons', address: 'Calle de Sevilla 3', url: 'https://www.fourseasons.com/es-es/madrid/', category: 'cat-4star', id: 'accom2'},
-    {city: 'Madrid', accommodation: 'Pestana CR7 Gran Vía', address: 'Calle Gran Vía 29', url: 'https://www.pestanacr7.com/es/hotel/pestana-madrid-gran-via', category: 'cat-4star', id: 'accom3'},
-    {city: 'Madrid', accommodation: 'Hyatt Centric Gran Vía', address: 'Calle Gran Vía 31', url: 'https://www.hyatt.com/hyatt-centric/es-ES/madct-hyatt-centric-gran-via-madrid', category: 'cat-4star', id: 'accom4'},
-    {city: 'Madrid', accommodation: 'VP Plaza España Design', address: 'Plaza de España 5', url: 'https://www.plazaespana-hotel.com/', category: 'cat-4star', id: 'accom5'},
-    {city: 'Madrid', accommodation: 'Barcelo Torre de Madrid', address: 'Plaza de España 18', url: 'https://www.barcelo.com/es-es/barcelo-torre-de-madrid/', category: 'cat-4star', id: 'accom6'},
-    {city: 'Madrid', accommodation: 'Iberostar Las Letras Gran Vía', address: 'Direccion hotel 2', url: 'www.prueba2.com', category: 'cat-4star', id: 'accom7'},
-    {city: 'Madrid', accommodation: 'Only YOU Boutique Hotel', address: 'Calle de Barquillo 21', url: 'https://www.onlyyouhotels.com', category: 'cat-boutique', id: 'accom8'},
-    {city: 'Madrid', accommodation: 'Madrid Gran Vía 25 by Melia', address: 'Calle Gran Vía 25', url: 'https://www.melia.com/es/hoteles/espana/madrid/hotel-madrid-gran-via-25-by-melia', category: 'cat-3star', id: 'accom9'},
-    {city: 'Madrid', accommodation: 'Rosewood Villa Magna', address: 'Paseo de la Castellana 22', url: 'https://www.rosewoodhotels.com/en/villa-magna', category: 'cat-5star', id: 'accom10'},
-    {city: 'Madrid', accommodation: 'ibis Madrid Aeropuerto Barajas', address: 'Av. General 49', url: 'https://all.accor.com/hotel/3753/index.es.shtml', category: 'cat-2star', id: 'accom11'},
-    {city: 'Barcelona', accommodation: 'Hotel Thompson', address: 'Direccion hotel 2', url: 'www.prueba3.com', category: 'cat-5star', id: 'accom12'},]
+    var accommodation = [{city: 'Madrid', accommodation: 'Riu Plaza España', address: 'Calle Gran Vía 84', url: 'www.prueba.com', category: 'cat-5star', cadena: 'Riu', barrio: 'Universidad', id: 'accom1'},
+    {city: 'Madrid', accommodation: 'Four Seasons', address: 'Calle de Sevilla 3', url: 'https://www.fourseasons.com/es-es/madrid/', category: 'cat-4star', cadena: 'Four Seasons', barrio: 'Cortes', id: 'accom2'},
+    {city: 'Madrid', accommodation: 'Pestana CR7 Gran Vía', address: 'Calle Gran Vía 29', url: 'https://www.pestanacr7.com/es/hotel/pestana-madrid-gran-via', category: 'cat-4star', cadena: 'Pestana', barrio: 'Sol', id: 'accom3'},
+    {city: 'Madrid', accommodation: 'Hyatt Centric Gran Vía', address: 'Calle Gran Vía 31', url: 'https://www.hyatt.com/hyatt-centric/es-ES/madct-hyatt-centric-gran-via-madrid', category: 'cat-4star', cadena: 'Hyatt', barrio: 'Sol', id: 'accom4'},
+    {city: 'Madrid', accommodation: 'VP Plaza España Design', address: 'Plaza de España 5', url: 'https://www.plazaespana-hotel.com/', category: 'cat-4star', cadena: 'VP', barrio: 'Palacio', id: 'accom5'},
+    {city: 'Madrid', accommodation: 'Barcelo Torre de Madrid', address: 'Plaza de España 18', url: 'https://www.barcelo.com/es-es/barcelo-torre-de-madrid/', category: 'cat-4star', cadena: 'Barcelo', barrio: 'Moncloa', id: 'accom6'},
+    {city: 'Madrid', accommodation: 'Iberostar Las Letras Gran Vía', address: 'Direccion hotel 2', url: 'www.prueba2.com', category: 'cat-4star', cadena: 'Iberostar', barrio: 'Cortes', id: 'accom7'},
+    {city: 'Madrid', accommodation: 'Only YOU Boutique Hotel', address: 'Calle de Barquillo 21', url: 'https://www.onlyyouhotels.com', category: 'cat-boutique', cadena: 'Only You', barrio: 'Chueca', id: 'accom8'},
+    {city: 'Madrid', accommodation: 'Madrid Gran Vía 25 by Melia', address: 'Calle Gran Vía 25', url: 'https://www.melia.com/es/hoteles/espana/madrid/hotel-madrid-gran-via-25-by-melia', category: 'cat-3star', cadena: 'Melia', barrio: 'Sol', id: 'accom9'},
+    {city: 'Madrid', accommodation: 'Rosewood Villa Magna', address: 'Paseo de la Castellana 22', url: 'https://www.rosewoodhotels.com/en/villa-magna', category: 'cat-5star', cadena: 'Rosewood', barrio: 'Castellana', id: 'accom10'},
+    {city: 'Madrid', accommodation: 'Ibis Madrid Aeropuerto Barajas', address: 'Av. General 49', url: 'https://all.accor.com/hotel/3753/index.es.shtml', category: 'cat-2star', cadena: 'Accor', barrio: 'Barajas', id: 'accom11'},
+    {city: 'Madrid', accommodation: 'Barcelo Emperatriz', address: 'Calle de Lopez de Hoyos 4', url: 'https://www.barcelo.com/en-es/barcelo-emperatriz', category: 'cat-5star', cadena: 'Barcelo', barrio: 'Castellana', id: 'accom12'},
+    {city: 'Barcelona', accommodation: 'Thompson', address: 'Direccion hotel 2', url: 'www.prueba3.com', category: 'cat-5star', barrio: '', id: 'accom13'},
+    {city: 'Madrid', accommodation: 'Ibis Budget Vallecas', address: 'Calle de Miravete 17', url: 'https://all.accor.com/ssr/app/ibis/rates/7066/index.es.shtml', category: 'cat-1star', cadena: 'Accor', barrio: 'Vallecas', id: 'accom14'},]
     
     return (
         <accommodationContext.Provider value={accommodation}>
