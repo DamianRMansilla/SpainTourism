@@ -6,10 +6,10 @@ import Valencia from "../../img/Cities/valencia.jpg"
 import SanSebastian from "../../img/Cities/peineViento.jpg"
 import SantiagoDeCompostela from "../../img/Cities/catedralSantiagoCompostela.jpg";
 import Mallorca from "../../img/Cities/mallorca.jpg";
-// import { Link } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 
 export default function MainCities(props){
+
     var mainCities = [{city: "Madrid", id: 1, class: "madrid-city", route: 'mercadosanmiguel', img: Madrid, playa: 'no', id: 'mas-visitados-1'}, 
                        {city: "Barcelona",  id: 2, class: "barcelona-city", route: 'alhambra', img: Barcelona, playa: 'no', id: 'mas-visitados-2'}, 
                        {city: "Malaga",  id: 4, class: "malaga-city", route: 'ronda', img: Malaga, playa: 'no', id: 'mas-visitados-3'}, 

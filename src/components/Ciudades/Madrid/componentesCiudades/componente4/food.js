@@ -1,21 +1,20 @@
-import React/*{ useState }*/ from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom';
 
 import "./food.css"
 
 export default function Food(){
-    // const [show, setShow] = useState(false)
-    // const showMore = () => setShow(true)
+
     var {city} = useParams()
-    var dishes = [{city: "Madrid", food_title: "Besugo a la Madrileña"},
-                  {city: "Madrid", food_title: "Callos a la Madrileña"}, 
-                  {city: "Madrid", food_title: "Bocadillo de calamares"},
-                  {city: "Madrid", food_title: "Huevos Rotos"},
-                  {city: "Madrid", food_title: "Sopa de ajo"},
-                  {city: "Madrid", food_title: "Tortilla de patatas"},
-                  {city: "Madrid", food_title: "Patatas bravas"},
-                  {city: "Madrid", food_title: "Caracoles a la Madrileña"},
-                  {city: "Barcelona", food_title: "Prueba"}]
+    var dishes = [{city: "Madrid", food_title: "Besugo a la Madrileña", id:1},
+                  {city: "Madrid", food_title: "Callos a la Madrileña", id:2}, 
+                  {city: "Madrid", food_title: "Bocadillo de calamares", id:3},
+                  {city: "Madrid", food_title: "Huevos Rotos", id:4},
+                  {city: "Madrid", food_title: "Sopa de ajo", id:5},
+                  {city: "Madrid", food_title: "Tortilla de patatas", id:6},
+                  {city: "Madrid", food_title: "Patatas bravas", id:7},
+                  {city: "Madrid", food_title: "Caracoles a la Madrileña", id:8},
+                  {city: "Barcelona", food_title: "Prueba", id:9}]
     return(
         <>
             <div className="foodGlobal">
@@ -26,7 +25,7 @@ export default function Food(){
                         dish =>{
                             if(dish.city === city){
                                 return(
-                                    <div className="foodImage">
+                                    <div key={dish.id} className="foodImage">
                                         <p className="foodName">{dish.food_title}</p>
                                     </div>    
                                 )

@@ -7,7 +7,7 @@ export default function ImagenCiudad(){
     return(
     <>
         <div className={`body${city} cityImage`} id='imageCity'>
-            <p class="lemaMadrid">{city === "Malaga" ? "Málaga" : city}</p>
+            <p className="lemaMadrid">{city === "Malaga" ? "Málaga" : city}</p>
         </div>
     </>
     )

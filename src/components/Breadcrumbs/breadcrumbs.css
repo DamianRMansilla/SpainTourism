@@ -1,0 +1,46 @@
+.breadcrumbs-container {
+  padding: 1rem 0;
+  display: flex;
+}
+.breadcrumbs-container .breadcrumbs-item {
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+.breadcrumbs-container .breadcrumbs-item span {
+  margin-bottom: 3px;
+}
+.breadcrumbs-container .breadcrumb-chevron {
+  margin: 0 0.35rem;
+  height: 0.75rem;
+}
+
+.home .breadcrumb-chevron, .home .breadcrumbs-item {
+  display: none;
+}
+
+.cities .breadcrumb-chevron, .cities .breadcrumbs-item {
+  display: none;
+}
+.cities .breadcrumb-home, .cities .breadcrumb-home-chevron, .cities .breadcrumb-cities {
+  display: flex;
+}
+
+.Madrid .breadcrumbs-container {
+  padding: 1rem 6rem;
+}
+.Madrid .breadcrumb-chevron, .Madrid .breadcrumbs-item {
+  display: none;
+}
+.Madrid .breadcrumb-home, .Madrid .breadcrumb-home-chevron, .Madrid .breadcrumb-cities, .Madrid .breadcrumb-city-name, .Madrid .breadcrumb-cities-chevron {
+  display: flex;
+}
+
+.accommodation .breadcrumb-chevron, .accommodation .breadcrumbs-item {
+  display: none;
+}
+.accommodation .breadcrumb-home, .accommodation .breadcrumb-home-chevron, .accommodation .breadcrumb-cities, .accommodation .breadcrumb-city-name, .accommodation .breadcrumb-city-name-chevron, .accommodation .breadcrumb-cities-chevron, .accommodation .breadcrumb-accommodation {
+  display: flex;
+}

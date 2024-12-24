@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import {BsSearch} from "react-icons/bs";
 import {GiHamburgerMenu} from "react-icons/gi";
 import {ImCross} from "react-icons/im";
@@ -6,10 +6,10 @@ import { Link } from 'react-router-dom';
 import Sidebar from "../Sidebar/sidebar";
 import SearchBar from '../SearchBar/searchBar';
 import Logo from '../../img/logo_espana_menu.jpg'
-import { useEffect } from 'react';
 import ReactDOM from 'react-dom'
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {useLocation} from "react-router-dom";
 
 
 export default function Header(){
@@ -21,14 +21,21 @@ export default function Header(){
     const [search, setSearch] = useState(false)
     const searchTurn = () => setSearch(!search)
 
-    // useEffect(() => {
-    //     if(ref.current.classList.contains('sidebarOut')){
-    //         console.log('yes')
-    //     } else {
-    //         console.log('no')
-    //     }
+    var location = useLocation();
 
-    // },[]);
+    if(location.pathname === '/'){
+        document.querySelector('body').className = '';
+        document.querySelector('body').classList.add('home');
+    } else if(location.pathname.split('/').filter(Boolean).pop() === 'ciudades'){
+        document.querySelector('body').className = '';
+        document.querySelector('body').classList.add('cities')
+    }  else if(location.pathname.split('/').filter(Boolean).pop() === 'Alojamiento'){
+        document.querySelector('body').className = '';
+        document.querySelector('body').classList.add('accommodation')
+    } else{
+        document.querySelector('body').className = '';
+        document.querySelector('body').classList.add(location.pathname.split('/').filter(Boolean).pop())
+    }
 
 
     return(

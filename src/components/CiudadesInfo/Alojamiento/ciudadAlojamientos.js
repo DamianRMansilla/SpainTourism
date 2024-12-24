@@ -6,8 +6,9 @@ import './ciudadAlojamientos.css'
 import ReactDOM from 'react-dom'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Breadcrumbs from "../../Breadcrumbs/breadcrumbs";
 
-export default function CityAccomodation(){
+export default function CityAccommodation(){
 
     var {city} = useParams()
     const accommodation = useContext(accommodationContext)
@@ -43,6 +44,8 @@ export default function CityAccomodation(){
     var cantSol = [];
     var cantUniversidad = [];
     var cantVallecas = [];
+    var itemsBlock = [];
+    var itemsNoBlock = [];
 
     var sumaElegidos = 0;
 
@@ -227,6 +230,7 @@ export default function CityAccomodation(){
             for(let j = 0; j <= elementChecked.length; j++){
                 if(hotelsCategory[i].classList.contains(elementChecked[j])){
                     hotelsCategory[i].classList.remove('dispNone');
+                    itemsBlock = document.querySelectorAll('.accommodation-item').length - document.querySelectorAll('.accommodation-item.dispNone').length;
                 } 
             }
         }
@@ -243,6 +247,8 @@ export default function CityAccomodation(){
     } else if (elementChecked.length === 0 && brandChecked.length === 0 && hoodChecked.length === 0){
         for (let i = 0; i < hotelsCategory.length; i++){
             hotelsCategory[i].classList.remove('dispNone');
+            itemsBlock = document.querySelectorAll('.accommodation-item').length - document.querySelectorAll('.accommodation-item.dispNone').length;
+
         }
         for (let i = 0; i < chips.length; i++){
             chips[i].classList.remove('dispFlex');
@@ -255,6 +261,7 @@ export default function CityAccomodation(){
                 for(let k = 0; k < brandChecked.length; k++){
                     if((hotelsCategory[i].classList.value.includes(elementChecked[j])) && hotelsCategory[i].classList.value.includes(brandChecked[k])){
                         hotelsCategory[i].classList.remove('dispNone');
+                        itemsBlock = document.querySelectorAll('.accommodation-item').length - document.querySelectorAll('.accommodation-item.dispNone').length;
                     }
                 }
             }
@@ -282,6 +289,8 @@ export default function CityAccomodation(){
             for(let j = 0; j <= brandChecked.length; j++){
                 if(hotelsCategory[i].classList.contains(brandChecked[j])){
                     hotelsCategory[i].classList.remove('dispNone');
+                    itemsBlock = document.querySelectorAll('.accommodation-item').length - document.querySelectorAll('.accommodation-item.dispNone').length;
+
                 } 
             }
         }
@@ -301,6 +310,8 @@ export default function CityAccomodation(){
             for(let j = 0; j <= hoodChecked.length; j++){
                 if(hotelsCategory[i].classList.contains(hoodChecked[j])){
                     hotelsCategory[i].classList.remove('dispNone');
+                    itemsBlock = document.querySelectorAll('.accommodation-item').length - document.querySelectorAll('.accommodation-item.dispNone').length;
+
                 } 
             }
         }
@@ -321,6 +332,8 @@ export default function CityAccomodation(){
                 for(let k = 0; k < hoodChecked.length; k++){
                     if((hotelsCategory[i].classList.value.includes(elementChecked[j])) && hotelsCategory[i].classList.value.includes(hoodChecked[k])){
                         hotelsCategory[i].classList.remove('dispNone');
+                        itemsBlock = document.querySelectorAll('.accommodation-item').length - document.querySelectorAll('.accommodation-item.dispNone').length;
+
                     }
                 }
             }
@@ -349,6 +362,8 @@ export default function CityAccomodation(){
                 for(let k = 0; k < brandChecked.length; k++){
                     if((hotelsCategory[i].classList.value.includes(hoodChecked[j])) && hotelsCategory[i].classList.value.includes(brandChecked[k])){
                         hotelsCategory[i].classList.remove('dispNone');
+                        itemsBlock = document.querySelectorAll('.accommodation-item').length - document.querySelectorAll('.accommodation-item.dispNone').length;
+
                     }
                 }
             }
@@ -378,6 +393,8 @@ export default function CityAccomodation(){
                     for(let l = 0; l < hoodChecked.length; l++){
                         if((hotelsCategory[i].classList.value.includes(elementChecked[j])) && hotelsCategory[i].classList.value.includes(brandChecked[k]) && hotelsCategory[i].classList.value.includes(hoodChecked[l])){
                             hotelsCategory[i].classList.remove('dispNone');
+                            itemsBlock = document.querySelectorAll('.accommodation-item').length - document.querySelectorAll('.accommodation-item.dispNone').length;
+
                         }
                     }
                 }
@@ -419,6 +436,7 @@ export default function CityAccomodation(){
     return(
         <>
             <div className='accommodation-main-container'>
+                <Breadcrumbs/>
                 <h1 className="accommodation-title" id="AccommodationTitle">Alojamientos en {city}</h1>
                 <div className="accommodation-filter-data">
                     <section className="filters">
@@ -527,8 +545,8 @@ export default function CityAccomodation(){
                             </div>
                         </div>
                     </section>
-                    <section className="available-accomodation">
-                        {elementChecked.length === 0 ? <h4> {cantHotels.length} alojamientos encontrados</h4> : <h4> {sumaElegidos} alojamientos encontrados</h4>}
+                    <section className="available-accommodation">
+                        {elementChecked.length === 0 && brandChecked.length === 0 && hoodChecked.length === 0 ? <h4> {cantHotels.length} alojamientos encontrados</h4> : <h4> {itemsBlock} alojamientos encontrados</h4>}
                         <section className='chips'>
                             {cantHotel.map(
                                 chipHotels =>{

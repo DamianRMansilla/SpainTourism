@@ -1,7 +1,7 @@
 .cityDescription{
     margin-bottom: 5%;
     box-sizing: border-box;
-    padding: 0 3%;
+    padding: 0 3% 0 0;
 }
 
 .cityDescription p{
@@ -9,11 +9,12 @@
 }
 
 .desc-title{
-    width: 90%;
+    /* width: 90%; */
     padding: 1rem 0 1rem 2vw;
     text-align: left;
     line-height: 2rem;
     font-size: 1.5rem;
+    margin: 0;
 }
 
 .cityButtons{
@@ -52,7 +53,7 @@
 
 }
 
-.cityButton li i{
+.cityButton li .left-logo{
     color: rgb(71, 71, 71);
     padding-right: 1vw;
 }
@@ -70,10 +71,11 @@
 @media(min-width: 769px){
     .cityDescription{
         width: 50%;
-        margin: 0 0 5% 3%;
+        margin: 0 0 5% 0;
     }
     .cityMain{
         display: flex;
+        padding: 0 6rem;
     }
 
 }

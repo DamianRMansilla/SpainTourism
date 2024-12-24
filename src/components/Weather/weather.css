@@ -1,8 +1,8 @@
 .weather{
     background-image: url("../../img/cielo.jpg");
-    width: 90%;
-    height: 250px;
-    margin: auto;
+    height: 200px;
+    /* width: 70%; */
+    margin: 2rem auto 0 auto;
     color: white;
     font-size: 20px;
     font-weight: 500;
@@ -38,18 +38,13 @@ p.temperature, p.tempDesc{
     p{
         font-size: 16px;
     }
-    .weather{
-        width: 70%;
-    }
 }
 
 @media(min-width: 769px){
-    p{
-        font-size: 16px;
+    .temperature-additional-info{
+        font-size: 13.5px;
     }
-    .weather{
-        width: 50%;
-    }
+    
 }
 
 
@@ -60,7 +55,7 @@ p.temperature, p.tempDesc{
 }
 
 .weatherIcon{
-    width: 12vw;
+    width: 120px;
     height: auto;
 }
 
@@ -75,9 +70,9 @@ p.temperature, p.tempDesc{
 }
 
 .temperatureP{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: center;
-    margin: 10px 0;
+    margin: 0 0 10px 0;
 }
 
 .temperature-additional-info{

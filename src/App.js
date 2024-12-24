@@ -1,6 +1,6 @@
 import './App.css';
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import React, {useState} from 'react';
+import {BrowserRouter as Router, Routes, Route, useLocation} from "react-router-dom";
+import {React, useEffect} from 'react';
 import Accommodation, { AllContexts, Tours } from './components/Context/AllContext';
 import "./components/Header/header";
 import "./components/Sidebar/sidebar";
@@ -21,40 +21,50 @@ import Otoño from "./components/TodoElAño/Otoño/otoño";
 import Verano from "./components/TodoElAño/Verano/verano";
 import Primavera from "./components/TodoElAño/Primavera/primavera";
 import Playa from './components/Playa/playa';
-import CityAccomodation from './components/CiudadesInfo/Alojamiento/ciudadAlojamientos';
+import CityAccommodation from './components/CiudadesInfo/Alojamiento/ciudadAlojamientos';
 import CityTours from './components/CiudadesInfo/Excursiones/ciudadExcursiones';
 
-export const cityContext = React.createContext();
+// export const cityContext = React.createContext();
+    
+function ScrollToTop() {
+  const location = useLocation();
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
+  return null;
+}
+      
 function App() {
 
   return (
     <>
       <Router>
+        <ScrollToTop />
         <AllContexts>
           <Accommodation>
             <Tours>
               <Header/>
-                <Switch>
-                    <Route exact path="/" component={Home}/>
-                    <Route exact path="/Ciudades" component={Ciudades}/>
-                    <Route exact path="/Playa" component={Playa}/>
-                    <Route exact path="/Alojamientos" component={Alojamientos}/>
-                    <Route exact path="/Ciudades/:city" component={Madrid}/>
-                    <Route exact path="/Ciudades/:city/Alojamiento" component={CityAccomodation}/>
-                    <Route exact path="/Ciudades/:city/Alojamiento/:accomodation" component={CityAccomodation}/>
-                    <Route exact path="/Ciudades/:city/Tours" component={CityTours}/>
-                    <Route exact path="/Imperdibles/MuseoDelPrado" component={MuseoDelPrado}/>
-                    <Route exact path="/Imperdibles/MercadoBoqueria" component={Boqueria}/>
-                    <Route exact path="/Imperdibles/CaminoDeSantiago" component={CaminoDeSantiago}/>
-                    <Route exact path="/TodoElAño/Invierno" component={Invierno}/>
-                    <Route exact path="/TodoElAño/Primavera" component={Primavera}/>
-                    <Route exact path="/TodoElAño/Verano" component={Verano}/>
-                    <Route exact path="/TodoElAño/Otoño" component={Otoño}/>
-                    <Route exact path="" component=""/>
-                    <Route path="*" component={Error404}/>
-                </Switch>
+                <Routes>
+                    <Route exact path="/" element={<Home/>}/>
+                    <Route exact path="/Ciudades" element={<Ciudades/>}/>
+                    <Route exact path="/Playa" element={<Playa/>}/>
+                    <Route exact path="/Alojamientos" element={<Alojamientos/>}/>
+                    <Route exact path="/Ciudades/:city" element={<Madrid/>}/>
+                    <Route exact path="/Ciudades/:city/Alojamiento" element={<CityAccommodation/>}/>
+                    <Route exact path="/Ciudades/:city/Alojamiento/:accomodation" component={<CityAccommodation/>}/>
+                    <Route exact path="/Ciudades/:city/Tours" element={<CityTours/>}/>
+                    <Route exact path="/Imperdibles/MuseoDelPrado" element={<MuseoDelPrado/>}/>
+                    <Route exact path="/Imperdibles/MercadoBoqueria" element={<Boqueria/>}/>
+                    <Route exact path="/Imperdibles/CaminoDeSantiago" element={<CaminoDeSantiago/>}/>
+                    <Route exact path="/TodoElAño/Invierno" element={<Invierno/>}/>
+                    <Route exact path="/TodoElAño/Primavera" element={<Primavera/>}/>
+                    <Route exact path="/TodoElAño/Verano" element={<Verano/>}/>
+                    <Route exact path="/TodoElAño/Otoño" element={<Otoño/>}/>
+                    <Route exact path="" element=""/>
+                    <Route path="*" element={<Error404/>}/>
+                </Routes>
               <Newsletter/>
               <Footer/>
             </Tours>

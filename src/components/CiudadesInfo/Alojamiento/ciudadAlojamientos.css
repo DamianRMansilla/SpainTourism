@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 .accommodation-main-container {
-  padding: 3.5rem 8rem 2rem 8rem;
+  padding: 3.5rem 6rem 2rem 6rem;
 }
 .accommodation-main-container .accommodation-title {
   text-align: center;
@@ -79,29 +79,31 @@
   font-size: 0.9rem;
 }
 .accommodation-main-container .accommodation-filter-data .filters .filter-form-list .filter-category .label-input-container .span-quantity {
-  font-size: 1rem;
-  color: rgba(0, 0, 0, 0.8196078431);
+  font-size: 0.9rem;
+  color: rgba(41, 40, 40, 0.8196078431);
   font-family: "Roboto", sans-serif;
 }
 .accommodation-main-container .accommodation-filter-data .filters .filter-form-list .last-filter {
   border-bottom: none;
 }
-.accommodation-main-container .accommodation-filter-data .available-accomodation {
+.accommodation-main-container .accommodation-filter-data .available-accommodation {
   width: 100%;
 }
-.accommodation-main-container .accommodation-filter-data .available-accomodation h4 {
+.accommodation-main-container .accommodation-filter-data .available-accommodation h4 {
   font-size: 1.2rem;
 }
-.accommodation-main-container .accommodation-filter-data .available-accomodation .chips {
+.accommodation-main-container .accommodation-filter-data .available-accommodation .chips {
   margin-bottom: 2rem;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
-.accommodation-main-container .accommodation-filter-data .available-accomodation .chips .chip {
+.accommodation-main-container .accommodation-filter-data .available-accommodation .chips .chip {
   padding: 0.3rem 1rem 0.4rem 1rem;
   border: solid 2px rgb(74, 160, 203);
   border-radius: 20px;
   margin-left: 0.5rem;
+  margin-bottom: 1rem;
   justify-content: center;
   align-items: center;
   line-height: 1.5rem;
@@ -109,10 +111,10 @@
   color: rgb(74, 160, 203);
   vertical-align: middle;
 }
-.accommodation-main-container .accommodation-filter-data .available-accomodation .chips .chip:hover {
+.accommodation-main-container .accommodation-filter-data .available-accommodation .chips .chip:hover {
   cursor: pointer;
 }
-.accommodation-main-container .accommodation-filter-data .available-accomodation .chips .chip .icon {
+.accommodation-main-container .accommodation-filter-data .available-accommodation .chips .chip .icon {
   margin-left: 0.5rem;
   height: 1rem;
   display: flex;
@@ -122,27 +124,27 @@
   font-size: 1.1rem;
   pointer-events: none;
 }
-.accommodation-main-container .accommodation-filter-data .available-accomodation .accommodation-container {
+.accommodation-main-container .accommodation-filter-data .available-accommodation .accommodation-container {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   padding-bottom: 4rem;
 }
-.accommodation-main-container .accommodation-filter-data .available-accomodation .accommodation-container .accommodation-item {
+.accommodation-main-container .accommodation-filter-data .available-accommodation .accommodation-container .accommodation-item {
   text-decoration: none;
   box-shadow: 1px 1px 1rem 0.1rem rgba(10, 10, 10, 0.242);
   border-radius: 0 0 5px 5px;
   width: 16rem !important;
   margin: 0 0.5rem 4rem 0.5rem;
 }
-.accommodation-main-container .accommodation-filter-data .available-accomodation .accommodation-container .accommodation-item .hotel-image {
+.accommodation-main-container .accommodation-filter-data .available-accommodation .accommodation-container .accommodation-item .hotel-image {
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
   height: 16rem;
   width: 16rem;
 }
-.accommodation-main-container .accommodation-filter-data .available-accomodation .accommodation-container .accommodation-item .accommodation-info {
+.accommodation-main-container .accommodation-filter-data .available-accommodation .accommodation-container .accommodation-item .accommodation-info {
   display: flex;
   flex-direction: column;
   background-color: #FFF;
@@ -150,19 +152,19 @@
   border-radius: 0 0 5px 5px;
   min-height: 118px;
 }
-.accommodation-main-container .accommodation-filter-data .available-accomodation .accommodation-container .accommodation-item .accommodation-info .accommodation-city {
+.accommodation-main-container .accommodation-filter-data .available-accommodation .accommodation-container .accommodation-item .accommodation-info .accommodation-city {
   font-size: 12px;
   color: rgb(173, 21, 25);
 }
-.accommodation-main-container .accommodation-filter-data .available-accomodation .accommodation-container .accommodation-item .accommodation-info .accommodation-name {
+.accommodation-main-container .accommodation-filter-data .available-accommodation .accommodation-container .accommodation-item .accommodation-info .accommodation-name {
   font-size: 1.4rem;
   color: black;
 }
-.accommodation-main-container .accommodation-filter-data .available-accomodation .accommodation-container .accommodation-item .accommodation-info .accommodation-address {
+.accommodation-main-container .accommodation-filter-data .available-accommodation .accommodation-container .accommodation-item .accommodation-info .accommodation-address {
   color: black;
   font-size: 0.8rem;
 }
-.accommodation-main-container .accommodation-filter-data .available-accomodation .accommodation-container .accommodation-item .accommodation-info .accommodation-category {
+.accommodation-main-container .accommodation-filter-data .available-accommodation .accommodation-container .accommodation-item .accommodation-info .accommodation-category {
   color: goldenrod;
 }
 
