@@ -8,7 +8,7 @@
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
     position: fixed;
     top: 0;
-    background-color: white;
+    background-color: #1A202C;
     overflow: hidden;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.485);
     .home{
@@ -22,6 +22,7 @@
         img{
             margin: auto;
             height: 100%;
+            display: none;
         }
     }
     .headerMenuList{
@@ -32,7 +33,7 @@
         .headerLink{
             margin: 0 auto;
             text-decoration: none;
-            color: black;
+            color: #FFF;
             text-align: center;
             display: flex;
             justify-content: center;
@@ -83,7 +84,7 @@
                         color: #000;
                         text-decoration: none;
                         &:hover{
-                            background-color: #444343a5;
+                            background-color: #343f57;
                             color: #FFF;
                         }
                         .headerDestinos{
@@ -95,7 +96,7 @@
                 &:hover{
                     box-sizing: border-box;
                     color: #FFF;
-                    background-color: #444343a5;
+                    background-color: #343f57;
                 }
             }
         }
@@ -138,7 +139,7 @@
                 align-items: center;
                 justify-content: center;
                 button{
-                    background-color: white;
+                    background-color: #1A202C;
                     border: none;
                     font-size: 25px;    
                     svg{
@@ -183,4 +184,14 @@
     .burger{
         margin-right: 5%;
     }
+}
+
+
+.magnglass{
+    background-color: #1A202C;
+    color: #FFF;
+}
+
+.chev-down, .chev-up{
+    margin-left: 0.5rem;
 }

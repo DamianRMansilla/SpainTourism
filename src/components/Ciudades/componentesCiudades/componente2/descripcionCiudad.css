@@ -1,0 +1,80 @@
+.cityDescription {
+  margin-bottom: 5%;
+  box-sizing: border-box;
+  padding: 0 3% 0 0;
+}
+.cityDescription .city-title {
+  font-family: "Montserrat", serif;
+}
+.cityDescription p {
+  text-align: justify;
+  font-family: "Montserrat", serif;
+}
+
+.desc-title {
+  padding: 1rem 0 1rem 2vw;
+  text-align: left;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.cityButtons {
+  display: flex;
+  flex-direction: column;
+  margin: 4vh auto auto auto;
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 40vw;
+  background-color: #eee;
+  box-shadow: 0 0 10px rgb(191, 191, 191);
+}
+
+.button-list {
+  padding: 0;
+  margin: 0;
+}
+
+.cityButton {
+  line-height: 3rem;
+  text-decoration: none;
+}
+
+.cityButton li:hover {
+  background-color: #eee;
+  color: black;
+  font-weight: 600;
+}
+
+.cityButton li {
+  list-style-type: none;
+  padding-left: 2vw;
+  border-top: 1px solid #eee;
+  background-color: white;
+  color: rgb(71, 71, 71);
+}
+
+.cityButton li .left-logo {
+  color: rgb(71, 71, 71);
+  padding-right: 1vw;
+}
+
+.last-child li {
+  border-radius: 0 0 20px 20px;
+}
+
+@media (min-width: 361px) and (max-width: 768px) {
+  .cityDescription {
+    width: 100%;
+  }
+}
+@media (min-width: 769px) {
+  .cityDescription {
+    width: 50%;
+    margin: 0 0 5% 0;
+  }
+  .cityMain {
+    display: flex;
+    padding: 0 6rem;
+  }
+}

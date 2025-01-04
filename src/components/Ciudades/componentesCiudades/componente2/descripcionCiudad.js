@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router-dom"
 import "./descripcionCiudad.css"
-import WeatherApi from '../../../../Weather/weather'
+import WeatherApi from '../../../Weather/weather'
 import ReactDOM from 'react-dom'
 import { faBed, faBus, faUtensils, faCalendar, faPlaneArrival, faSuitcase } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -23,7 +23,7 @@ export default function DescripcionCiudad(){
         <>
             <div className="cityMain">
                 <div className="cityDescription">
-                    <h2>{mainTitle}</h2>
+                    <h2 className="city-title">{mainTitle}</h2>
                     <p>{description}</p>
                 </div>
                 <div className="city-left-side-componen">

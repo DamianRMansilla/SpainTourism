@@ -1,13 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
-import {BsSearch} from "react-icons/bs";
-import {GiHamburgerMenu} from "react-icons/gi";
-import {ImCross} from "react-icons/im";
 import { Link } from 'react-router-dom';
 import Sidebar from "../Sidebar/sidebar";
 import SearchBar from '../SearchBar/searchBar';
 import Logo from '../../img/logo_espana_menu.jpg'
 import ReactDOM from 'react-dom'
-import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown, faChevronUp, faMagnifyingGlass, faXmark, faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {useLocation} from "react-router-dom";
 
@@ -45,8 +42,8 @@ export default function Header(){
                 <ul className="headerMenuList">
                     <span className='headerLink' to="/Ciudades">
                         <li className="headerMenu">Destinos
-                            <FontAwesomeIcon icon={faChevronDown} />
-                            <FontAwesomeIcon icon={faChevronUp} />
+                            <FontAwesomeIcon icon={faChevronDown} className='chev-down' />
+                            <FontAwesomeIcon icon={faChevronUp} className='chev-up'/>
                             <ul className='headerMenuListDisplay'>
                                 <Link to="/Ciudades/Madrid"><li className="headerDestinos">Madrid</li></Link>
                                 <Link to="/Ciudades/Barcelona"><li className="headerDestinos">Barcelona</li></Link>
@@ -78,15 +75,15 @@ export default function Header(){
                 <section className='headerButtonContainer'>
                     <div className="searchButton">
                         <div>
-                            <button onClick={searchTurn}><BsSearch/></button>
+                            <button onClick={searchTurn}><FontAwesomeIcon icon={faMagnifyingGlass} className='magnglass'/></button>
                         </div>
                     </div>
                     <div className="menuButton">
                         <div className={moveIn ? "arrowLeft" : "arrowLeftNo"}>
-                            <button onClick={hide}><ImCross/></button>
+                            <button onClick={hide}><FontAwesomeIcon icon={faXmark} /></button>
                         </div>
                         <div className={moveIn ? "arrowRightNo" : "arrowRight"}>
-                            <button onClick={show}><GiHamburgerMenu/></button>
+                            <button onClick={show}><FontAwesomeIcon icon={faBars} /></button>
                         </div>
                     </div>
                 </section>

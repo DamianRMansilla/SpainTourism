@@ -1,0 +1,52 @@
+.foodGlobal {
+  padding: 5rem 6rem;
+}
+.foodGlobal .que-comer-ciudad {
+  color: #1A202C;
+  margin: 0;
+  font-weight: bold;
+  font-family: "Montserrat", serif;
+  font-size: 2.5rem;
+}
+.foodGlobal .adit-info {
+  color: #000;
+  font-size: 1.1rem;
+  margin-left: 0;
+  margin-top: 0.6rem;
+  font-family: "Montserrat", serif;
+}
+.foodGlobal .foodContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 3rem auto 0 auto;
+}
+.foodGlobal .foodContainer .foodElement {
+  margin-bottom: 3rem;
+  width: 22%;
+}
+.foodGlobal .foodContainer .foodElement .foodImage {
+  border-radius: 8px;
+  width: 100%;
+  height: 230px;
+}
+.foodGlobal .foodContainer .foodElement .foodName {
+  font-size: 1.2rem;
+  width: 100%;
+  margin: 0;
+  padding-top: 0.5rem;
+  font-weight: 700;
+  font-family: "Montserrat", serif;
+  color: #1A202C;
+}
+
+@media (min-width: 361px) and (max-width: 768px) {
+  .foodName {
+    font-size: 14px;
+  }
+}
+@media (min-width: 769px) {
+  .foodName {
+    font-size: 16px;
+  }
+}

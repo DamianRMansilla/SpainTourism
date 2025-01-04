@@ -17,7 +17,7 @@
   height: 0.75rem;
 }
 
-.home .breadcrumb-chevron, .home .breadcrumbs-item {
+.home .breadcrumbs-container {
   display: none;
 }
 

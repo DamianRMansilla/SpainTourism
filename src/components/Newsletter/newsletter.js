@@ -24,7 +24,7 @@ export default function Newsletter(){
                         <input type="mail" id="mail"></input>
                     </div>
                 </div>
-                <button className="envioNewsletter" type="submit" onClick={handleSubmit}>¡Suscribirme!</button>
+                <button className="envioNewsletter" type="submit" onClick={handleSubmit}>Suscribirme</button>
             </form>
             <div className={suscript? "suscripted" : "noSuscripted"}>
                 <h1>¡Gracias por suscribirte!</h1>

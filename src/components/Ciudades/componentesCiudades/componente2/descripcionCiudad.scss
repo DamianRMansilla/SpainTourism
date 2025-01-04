@@ -2,14 +2,18 @@
     margin-bottom: 5%;
     box-sizing: border-box;
     padding: 0 3% 0 0;
+    .city-title{
+        font-family: "Montserrat", serif;
+    }
+    p{
+        text-align: justify;
+        font-family: "Montserrat", serif;
 }
 
-.cityDescription p{
-    text-align: justify;
 }
 
 .desc-title{
-    /* width: 90%; */
+    
     padding: 1rem 0 1rem 2vw;
     text-align: left;
     line-height: 2rem;

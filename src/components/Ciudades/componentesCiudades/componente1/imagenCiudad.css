@@ -1,14 +1,14 @@
 
 .bodyMadrid{
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../../../../img/madrid.jpeg");
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../../../img/madrid.jpeg");
 }
 
 .bodyBarcelona{
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../../../../img/barcelona.jpg");
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../../../img/barcelona.jpg");
 }
 
 .bodyMalaga{
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../../../../img/malaga.jpg");
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../../../img/malaga.jpg");
 }
 
 .cityImage{

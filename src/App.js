@@ -8,7 +8,7 @@ import "./components/Newsletter/newsletter";
 import Home from "./Pages/Home/home";
 import Ciudades from './Pages/CiudadesVista/ciudades';
 import Error404 from './Pages/Error404/error404';
-import Madrid from "./components/Ciudades/Madrid/madrid"
+import City from "./components/Ciudades/city"
 import Header from './components/Header/header';
 import Alojamientos from './Pages/Alojamientos/GlobalAlojamientos';
 import Newsletter from './components/Newsletter/newsletter';
@@ -51,7 +51,7 @@ function App() {
                     <Route exact path="/Ciudades" element={<Ciudades/>}/>
                     <Route exact path="/Playa" element={<Playa/>}/>
                     <Route exact path="/Alojamientos" element={<Alojamientos/>}/>
-                    <Route exact path="/Ciudades/:city" element={<Madrid/>}/>
+                    <Route exact path="/Ciudades/:city" element={<City/>}/>
                     <Route exact path="/Ciudades/:city/Alojamiento" element={<CityAccommodation/>}/>
                     <Route exact path="/Ciudades/:city/Alojamiento/:accomodation" component={<CityAccommodation/>}/>
                     <Route exact path="/Ciudades/:city/Tours" element={<CityTours/>}/>

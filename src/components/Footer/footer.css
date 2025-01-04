@@ -1,31 +1,32 @@
-.footer{
-    background-color: rgb(49, 108, 137);
-    display: flex;
+.footer {
+  background-color: #1A202C;
+  display: flex;
+  padding: 2rem 6rem;
 }
-
-.logos{
-    display: flex;
-    line-height: 5vh;
-    margin: auto 2vw auto auto;
+.footer .infoFooter ul {
+  padding: 0;
+  margin: 0;
 }
-
-.socialNetworkLogo{
-    padding: 7px;
-    border-radius: 50%;
-    background-color: white;
-    width: 8%;
-    height: 16%;
-    margin: 2vh 2vw 2vh 0;
-    color: rgb(49, 108, 137);
+.footer .infoFooter ul li {
+  list-style-type: none;
+  font-weight: 500;
+  color: white;
 }
-
-.socialNetworkLogo svg{
-    display: block;
-    margin: auto;
+.footer .logos {
+  display: flex;
+  line-height: 5vh;
+  margin: auto 0 auto auto;
 }
-
-.infoFooter ul li{
-    list-style-type: none;
-    font-weight: 500;
-    color: white;
+.footer .logos .socialNetworkLogo {
+  padding: 7px;
+  border-radius: 50%;
+  background-color: white;
+  width: 8%;
+  height: 16%;
+  margin: 2vh 2vw 2vh 0;
+  color: #1A202C;
+}
+.footer .logos .socialNetworkLogo svg {
+  display: block;
+  margin: auto;
 }
