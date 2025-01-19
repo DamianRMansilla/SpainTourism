@@ -1,0 +1,160 @@
+.SpainMapContainer{
+    padding: 4rem 6rem 0 6rem;
+    .SpainMap{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 4rem 4rem 0 4rem;
+        .button-map-container{
+            .mapa-ciudades,.mapa-comunidades{
+                background-color: #1A202C;
+                color: white;
+                border: none;
+                line-height: 2rem;
+                border-radius: 5px;
+                font-weight: 500;
+                font-size: 0.9rem;
+                padding: 0.5rem 1rem;
+                font-family: "Montserrat", serif;
+                margin: 0 2rem 2rem 0;
+                width: 10rem;
+                line-height: 1.1rem;
+            }
+            .unavailable{
+                background-color: #1a202c95;
+            }
+        }
+        .subtitle2{
+            font-size: 1rem;
+            margin-left: 0;
+            margin-top: 0.6rem;
+            font-family: "Montserrat", serif;
+            text-align: left;
+            letter-spacing: 0.7px;
+        }
+        .map-element-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .map-overlay-container{
+                SVG{
+                    .map-galicia, .map-asturias, .map-cantabria, .map-pais-vasco, .map-navarra, .map-aragon, 
+                    .map-cataluña, .map-la-rioja, .map-valencia, .map-murcia, .map-andalucia, .map-extremadura, 
+                    .map-castilla-la-mancha, .map-madrid, .map-castilla-leon{
+                        &:hover{
+                            fill: #304c85;
+                        }
+                    }
+                }
+                .map-overlay{
+                    position: absolute;
+                    bottom: 0;
+                    width: 600px;
+                    height: 500px;
+                    .city-location{
+                        position: absolute;
+                        text-decoration: none;
+                        display: flex;
+                        align-items: center;
+                        height: 2rem;
+                        .city-location-round{
+                            display: block;
+                            height: 1.1rem;
+                            width: 1.1rem;
+                            background-color: #eaf0fc;
+                            border-radius: 50%;
+                            &:hover{
+                                animation-name: increaseElement;
+                                animation-duration: 2s;
+                                animation-timing-function: linear;
+                                animation-delay: 0s;
+                                animation-iteration-count: infinite;
+                                animation-direction: alternate;
+                                animation-fill-mode: none;
+                                ~ .city-name{
+                                    display: block;
+                                }
+                            }
+                        }
+                        .city-name{
+                            display: none;
+                            background: #ffffffe2;
+                            color: #1A202C;
+                            padding: 0.2rem 0.5rem;
+                            margin-left: 0.5rem;
+                            border-radius: 3px;
+                            color: #c30c0c;
+                            font-weight: 500;
+                            font-family: "Montserrat", serif;
+                        }
+                    }
+                }
+            }
+            .city-element{
+                margin: 0 4rem 0 20rem;
+                .map-side-city-element{
+                    flex-direction: column;
+                    .city-box{
+                        height: 30rem;
+                        width: 23rem;
+                        position: relative;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        .city-text-container{
+                            display: flex;
+                            flex-direction: column;
+                            position: absolute;
+                            bottom: 2rem;
+                            left: 2rem;
+                            .city-name{
+                                color: #FFF;
+                                text-transform: uppercase;
+                                text-decoration: none;
+                                font-family: "Montserrat", serif;
+                                font-weight: 600;
+                                font-size: 1.3rem;
+                                margin-bottom: 1rem;
+                            }
+                            .city-link{
+                                color: #FFF;
+                                text-decoration: none;
+                                font-family: "Montserrat", serif;
+                                font-weight: 400;
+                                font-size: 1rem;
+                                margin-top: 0.3rem;
+                                letter-spacing: 0.2px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.dispNone{
+    display: none;
+}
+
+.dispFlex{
+    display: flex;
+}
+
+@keyframes increaseElement {
+    0%{
+        transform: scale(1);
+        background: #c30c0c;
+    }
+    50%{
+        transform: scale(1.3);
+        background: #c30c0c;
+        box-shadow: 0 0 10px 5px #c30c0c;
+    }
+    100%{
+        transform: scale(1);
+        background: #c30c0c;
+    }
+}
+
+
