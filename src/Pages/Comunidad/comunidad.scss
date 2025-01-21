@@ -1,0 +1,54 @@
+.community-body{
+    padding: 0 6rem 2rem 6rem;
+    .community-desc-container{
+        margin-bottom: 4rem;
+        .descripcion-comunidad{
+            text-align: justify;
+            font-family: "Montserrat", serif;
+            letter-spacing: 0.6px;
+            line-height: 1.5rem;
+        }
+    }
+    .cities-container{
+        .cities-list{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 4rem;
+            .city-link{
+                text-decoration: none;
+                width: 48%;
+                margin-bottom: 2rem;
+                border-radius: 5px;
+                padding: 1rem;
+                &:hover{
+                    box-shadow: 0 0 5px 5px #5f5f5f82;
+                }
+                .city-big-container{
+                    display: flex;
+                    .square-image{
+                        width: 6rem;
+                        height: 6rem;
+                    }
+                    .community-city-text-container{
+                        margin: 0 0 0 1rem;
+                        .community-city-title{
+                            margin: 0;
+                            color: #000;
+                        }
+                        .community-city-desc{
+                            margin: 0;
+                            text-align: justify;
+                            color: #000;
+                            text-align: justify;
+                            font-family: "Montserrat", serif;
+                            letter-spacing: 0.1px;
+                            line-height: 1.1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

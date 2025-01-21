@@ -10,7 +10,7 @@ import {useLocation} from "react-router-dom";
 export default function Breadcrumbs(){
     var { city } = useParams();
     var currentCity = useLocation();
-    currentCity = '/ciudades/' + currentCity.pathname.split('/')[2];
+    currentCity = '/Ciudades/' + currentCity.pathname.split('/')[2];
 
     return(
         <>
@@ -19,7 +19,7 @@ export default function Breadcrumbs(){
                     <span>Inicio</span>
                     <FontAwesomeIcon icon={faChevronRight} className='breadcrumb-home-chevron breadcrumb-chevron'/>
                 </Link>
-                <Link to={'/ciudades'} className='breadcrumbs-item breadcrumb-cities'>
+                <Link to={'/Ciudades'} className='breadcrumbs-item breadcrumb-cities'>
                     <span>Ciudades</span>
                     <FontAwesomeIcon icon={faChevronRight} className='breadcrumb-cities-chevron breadcrumb-chevron'/>
                 </Link>

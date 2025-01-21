@@ -1,0 +1,52 @@
+.community-body {
+  padding: 0 6rem 2rem 6rem;
+}
+.community-body .community-desc-container {
+  margin-bottom: 4rem;
+}
+.community-body .community-desc-container .descripcion-comunidad {
+  text-align: justify;
+  font-family: "Montserrat", serif;
+  letter-spacing: 0.6px;
+  line-height: 1.5rem;
+}
+.community-body .cities-container .cities-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+.community-body .cities-container .cities-list .city-link {
+  text-decoration: none;
+  width: 48%;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  padding: 1rem;
+}
+.community-body .cities-container .cities-list .city-link:hover {
+  box-shadow: 0 0 5px 5px rgba(95, 95, 95, 0.5098039216);
+}
+.community-body .cities-container .cities-list .city-link .city-big-container {
+  display: flex;
+}
+.community-body .cities-container .cities-list .city-link .city-big-container .square-image {
+  width: 6rem;
+  height: 6rem;
+}
+.community-body .cities-container .cities-list .city-link .city-big-container .community-city-text-container {
+  margin: 0 0 0 1rem;
+}
+.community-body .cities-container .cities-list .city-link .city-big-container .community-city-text-container .community-city-title {
+  margin: 0;
+  color: #000;
+}
+.community-body .cities-container .cities-list .city-link .city-big-container .community-city-text-container .community-city-desc {
+  margin: 0;
+  text-align: justify;
+  color: #000;
+  text-align: justify;
+  font-family: "Montserrat", serif;
+  letter-spacing: 0.1px;
+  line-height: 1.1rem;
+}

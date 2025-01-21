@@ -19,20 +19,41 @@ export default function Header(){
     const searchTurn = () => setSearch(!search)
 
     var location = useLocation();
+    var urlArray = location.pathname.split('/').filter(Boolean);
+    console.log(urlArray)
+    console.log(urlArray[urlArray.length -1])
+    console.log(location.pathname)
 
-    if(location.pathname === '/'){
-        document.querySelector('body').className = '';
-        document.querySelector('body').classList.add('home');
-    } else if(location.pathname.split('/').filter(Boolean).pop() === 'ciudades'){
-        document.querySelector('body').className = '';
-        document.querySelector('body').classList.add('cities')
-    }  else if(location.pathname.split('/').filter(Boolean).pop() === 'Alojamiento'){
-        document.querySelector('body').className = '';
-        document.querySelector('body').classList.add('accommodation')
-    } else{
-        document.querySelector('body').className = '';
-        document.querySelector('body').classList.add(location.pathname.split('/').filter(Boolean).pop())
+    for(let i = 0; i <= urlArray.length; i++){
+        if(location.pathname === '/'){
+            document.querySelector('body').className = '';
+            document.querySelector('body').classList.add('home');
+            console.log('a');
+        } else if(urlArray.length === 2 && urlArray[0] === 'Ciudades'){
+            document.querySelector('body').className = '';
+            document.querySelector('body').classList.add('cities');
+            console.log('b');
+        } else if(urlArray[urlArray.length -1] === 'Ciudades' || urlArray[urlArray.length -1] === 'ciudades'){
+            document.querySelector('body').className = '';
+            document.querySelector('body').classList.add('city');
+            console.log('c');
+        }  else if(urlArray[urlArray.length -1] === 'Alojamiento'){
+            document.querySelector('body').className = '';
+            document.querySelector('body').classList.add('accommodation');
+            console.log('d');
+        } else if(urlArray[urlArray.length -1] === 'Tours'){
+            document.querySelector('body').className = '';
+            document.querySelector('body').classList.add('tours');
+            console.log('e');
+        }
     }
+
+    // var b = location.pathname.split('/').filter(Boolean);
+    // for(let i = 0; i < b.length; i++){
+    //     if( b.length === 2 && b[0] === 'Ciudades' || 'ciudades'){
+    //         console.log(b[0])
+    //     }
+    // }
 
 
     return(

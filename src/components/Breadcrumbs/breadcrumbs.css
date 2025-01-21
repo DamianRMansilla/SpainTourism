@@ -1,5 +1,5 @@
 .breadcrumbs-container {
-  padding: 1rem 0;
+  padding: 1rem 6rem;
   display: flex;
 }
 .breadcrumbs-container .breadcrumbs-item {
@@ -24,17 +24,17 @@
 .cities .breadcrumb-chevron, .cities .breadcrumbs-item {
   display: none;
 }
-.cities .breadcrumb-home, .cities .breadcrumb-home-chevron, .cities .breadcrumb-cities {
+.cities .breadcrumb-home, .cities .breadcrumb-home-chevron, .cities .breadcrumb-cities, .cities .breadcrumb-cities-chevron, .cities .breadcrumb-city-name {
   display: flex;
 }
 
-.Madrid .breadcrumbs-container {
+.city .breadcrumbs-container {
   padding: 1rem 6rem;
 }
-.Madrid .breadcrumb-chevron, .Madrid .breadcrumbs-item {
+.city .breadcrumb-chevron, .city .breadcrumbs-item {
   display: none;
 }
-.Madrid .breadcrumb-home, .Madrid .breadcrumb-home-chevron, .Madrid .breadcrumb-cities, .Madrid .breadcrumb-city-name, .Madrid .breadcrumb-cities-chevron {
+.city .breadcrumb-home, .city .breadcrumb-home-chevron, .city .breadcrumb-cities, .city .breadcrumb-city-name, .city .breadcrumb-cities-chevron {
   display: flex;
 }
 

@@ -1,5 +1,5 @@
 .breadcrumbs-container{
-    padding: 1rem 0;
+    padding: 1rem 6rem;
     display: flex;
     .breadcrumbs-item{
         font-size: 0.85rem;
@@ -27,13 +27,13 @@
     .breadcrumb-chevron, .breadcrumbs-item{
         display: none;
     }
-    .breadcrumb-home, .breadcrumb-home-chevron, .breadcrumb-cities{
+    .breadcrumb-home, .breadcrumb-home-chevron, .breadcrumb-cities, .breadcrumb-cities-chevron, .breadcrumb-city-name{
         display: flex;
     }
 }
 
 
-.Madrid{
+.city{
     .breadcrumbs-container{
         padding: 1rem 6rem;
     }
