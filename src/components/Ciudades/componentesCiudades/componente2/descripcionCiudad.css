@@ -13,6 +13,10 @@
   letter-spacing: 0.6px;
 }
 
+.city-left-side-component {
+  width: 40%;
+}
+
 .desc-title {
   padding: 1rem 0 1rem 2vw;
   text-align: left;
@@ -27,7 +31,6 @@
   margin: 4vh auto auto auto;
   box-sizing: border-box;
   border-radius: 20px;
-  width: 40vw;
   background-color: #eee;
   box-shadow: 0 0 10px rgb(191, 191, 191);
 }
@@ -72,11 +75,11 @@
 }
 @media (min-width: 769px) {
   .cityDescription {
-    width: 50%;
+    width: 60%;
     margin: 0 0 5% 0;
   }
   .cityMain {
     display: flex;
-    padding: 0 6rem;
+    padding: 4rem 16rem;
   }
 }

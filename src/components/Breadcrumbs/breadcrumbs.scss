@@ -1,5 +1,7 @@
+@use '../general' as gen;
+
 .breadcrumbs-container{
-    padding: 1rem 6rem;
+    padding: 1rem 16rem;
     display: flex;
     .breadcrumbs-item{
         font-size: 0.85rem;

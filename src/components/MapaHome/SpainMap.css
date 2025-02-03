@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .SpainMapContainer {
-  padding: 4rem 6rem 0 6rem;
+  padding: 4rem 16rem;
 }
 .SpainMapContainer .SpainMap {
   display: flex;
@@ -113,6 +113,7 @@
   font-family: "Montserrat", serif;
   font-weight: 600;
   font-size: 1.3rem;
+  margin: 0;
   margin-bottom: 1rem;
 }
 .SpainMapContainer .SpainMap .map-element-container .city-element .map-side-city-element .city-box .city-text-container .city-link {

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .masVisitadosGlobal {
-  padding: 3rem 1rem 0 1rem;
+  padding: 4rem 16rem;
 }
 
 .title {
@@ -110,7 +110,7 @@
 }
 @media (min-width: 1501px) {
   .masVisitadosGlobal {
-    padding: 4rem 6rem 0 6rem !important;
+    padding: 4rem 16rem;
   }
   .title {
     font-size: 2rem !important;
@@ -123,67 +123,67 @@
   }
 }
 .madrid-city {
-  background: url("../../img/Cities/madrid.jpg");
+  background: url("../../../img/Cities/madrid.jpg");
 }
 
 .barcelona-city {
-  background: url("../../img/Cities/barcelona.jpg");
+  background: url("../../../img/Cities/barcelona.jpg");
 }
 
 .sansebastian-city {
-  background: url("../../img/Cities/peineViento.jpg");
+  background: url("../../../img/Cities/peineViento.jpg");
 }
 
 .malaga-city {
-  background: url("../../img/Cities/malaga.png");
+  background: url("../../../img/Cities/malaga.png");
 }
 
 .sevilla-city {
-  background: url("../../img/Cities/sevilla.jpg");
+  background: url("../../../img/Cities/sevilla.jpg");
 }
 
 .valencia-city {
-  background: url("../../img/Cities/valencia.jpg");
+  background: url("../../../img/Cities/valencia.jpg");
 }
 
 .santiagodecompostela-city {
-  background: url("../../img/Cities/catedralSantiagoCompostela.jpg");
+  background: url("../../../img/Cities/catedralSantiagoCompostela.jpg");
 }
 
 .mallorca-city {
-  background: url("../../img/Cities/mallorca.jpg");
+  background: url("../../../img/Cities/mallorca.jpg");
 }
 
 .alicante-city {
-  background: url("../../img/Cities/alicante.png");
+  background: url("../../../img/Cities/alicante.png");
 }
 
 .córdoba-city {
-  background: url("../../img/Cities/cordoba.png");
+  background: url("../../../img/Cities/cordoba.png");
 }
 
 .granada-city {
-  background: url("../../img/Cities/granada.png");
+  background: url("../../../img/Cities/granada.png");
 }
 
 .cadiz-city {
-  background: url("../../img/Cities/cadiz.png");
+  background: url("../../../img/Cities/cadiz.png");
 }
 
 .bilbao-city {
-  background: url("../../img/Cities/bilbao.png");
+  background: url("../../../img/Cities/bilbao.png");
 }
 
 .ibiza-city {
-  background: url("../../img/Cities/ibiza.png");
+  background: url("../../../img/Cities/ibiza.png");
 }
 
 .tenerife-city {
-  background: url("../../img/Cities/tenerife.png");
+  background: url("../../../img/Cities/tenerife.png");
 }
 
 .segovia-city {
-  background: url("../../img/Cities/segovia.png");
+  background: url("../../../img/Cities/segovia.png");
 }
 
 .city-image-main {

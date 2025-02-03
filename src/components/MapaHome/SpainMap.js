@@ -1,10 +1,9 @@
 import './SpainMap.css'
-import { useState, useContext } from 'react';
-import { HashLink as Link } from "react-router-hash-link";
-import { mapCitiesContext } from '../Context/AllContext';
+import { useState } from 'react';
+import CityComponent from './CityComponent/citycomponent';
+import CityOnMap from './CityOnMap/cityonmap';
 
 export default function SpainMap(){
-    const citiesOnMap = useContext(mapCitiesContext);
     const [showCommunityMap, setShowCommunityMap] = useState(false);
     const [leftMap, setLeftMap] = useState('madrid');
 
@@ -15,6 +14,8 @@ export default function SpainMap(){
     const cityMap = () => {
         setShowCommunityMap(true)  
     };
+
+    console.log(leftMap)
 
     return(
         <div className='SpainMapContainer'>
@@ -48,7 +49,7 @@ export default function SpainMap(){
                             <path d="M 168 164 L170 158 L166 157 L176 148 L176 147 L176 146 L177 146 L177 141 L176 139 L163 134 L164 126 L170 118 L180 117 L182 114 L194 112 L200 116 L201 117 L202 117 L203 117 L207 111 L208 111 L209 111 L215 114 L216 114 L224 112 L228 109 L234 103 L235 103 L237 110 L240 116 L242 118 L244 120 L260 118 L261 118 L265 124 L269 124 L270 125 L271 132 L276 135 L279 136 L284 136 L288 134 L292 130 L292 124 L287 124 L286 123 L285 122 L284 121 L284 120 L284 119 L284 118 L289 114 L297 110 L310 104 L315 106 L322 106 L322 105 L330 102 L334 99 L336 98 L341 102 L344 101 L343 106 L343 112 L346 116 L344 120 L332 120 L329 125 L342 130  L324 132 L323 140 L323 152 L322 163 L326 169 L333 172 L334 164 L338 164 L336 172 L342 172 L342 172 L347 160 L359 162 L360 164 L365 178 L374 180 L382 177 L382 186 L378 198 L380 205 L355 205 L335 195 L330 195 L310 200 L258 248.5 L258 249 L235 252 L228 254 L228 250 L226 250 L222 253 L220 255 L200 245 L185 253 L184 254 L183 258 L172 260 L173 250 L172 232 L168 224 L177 222 L177 220 L183 210 L186 211 L200 185 L190 178 L187 180 L185 174 L187 168 L185 166 Z" stroke='#EAF0FC' strokeWidth={2} fill='#1A202C' className={`map-castilla-leon ${showCommunityMap?'':'dispNone'}`}/> // Castilla y Leon
                         </svg>
                         <div className={`map-overlay ${showCommunityMap?'dispNone':''}`}>
-                            {citiesOnMap.map(
+                            {/* {citiesOnMap.map(
                                 citiesMap => {
                                     var cityName = citiesMap.city.replaceAll(' ','-').toLowerCase();
                                     var cityFunctionName = citiesMap.city.replaceAll(' ','').toLowerCase();
@@ -62,11 +63,12 @@ export default function SpainMap(){
                                         )
                                     }
                                 }
-                            )}
+                            )} */}
+                            <CityOnMap leftMap={leftMap} setLeftMap={setLeftMap}/>
                         </div>
                     </div>
                     <div className='city-element'>
-                        {citiesOnMap.map(
+                        {/* {citiesOnMap.map(
                             cities =>{
                                 var cityClassname = cities.city.replaceAll(' ','-').replaceAll('á','a').replaceAll('é','e').replaceAll('í','i').replaceAll('ó','o').replaceAll('ú','u').toLowerCase();
                                 var cityAllTogether = cities.city.replaceAll(' ','').toLowerCase();
@@ -85,7 +87,8 @@ export default function SpainMap(){
                                     )
                                 }
                             }
-                        )}
+                        )} */}
+                        <CityComponent leftMap={leftMap}/>
                     </div>
                 </section>
             </div>

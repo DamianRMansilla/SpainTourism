@@ -1,5 +1,7 @@
+@use '../general' as gen;
+
 .SpainMapContainer{
-    padding: 4rem 6rem 0 6rem;
+    padding: gen.$all-padding;
     .SpainMap{
         display: flex;
         flex-direction: column;
@@ -107,12 +109,7 @@
                             bottom: 2rem;
                             left: 2rem;
                             .city-name{
-                                color: #FFF;
-                                text-transform: uppercase;
-                                text-decoration: none;
-                                font-family: "Montserrat", serif;
-                                font-weight: 600;
-                                font-size: 1.3rem;
+                                @include gen.white-title;
                                 margin-bottom: 1rem;
                             }
                             .city-link{

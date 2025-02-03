@@ -14,7 +14,7 @@ export default function Map(){
                     if(cityMap.city === city){
                         return(
                             <div key={cityMap.id} className="mapContainer">
-                                <iframe width="90%" height="400px" style={{border:0, margin: "auto"}} loading="lazy" allowFullScreen referrerPolicy="no-referrer-when-downgrade"
+                                <iframe width="74%" title="map" height="400px" style={{border:0, margin: "auto"}} loading="lazy" allowFullScreen referrerPolicy="no-referrer-when-downgrade"
                                         src={`https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_GOOGLE_PASS}&q=${city}&zoom=15`}>
                                 </iframe>
                             </div>

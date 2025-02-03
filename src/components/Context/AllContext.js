@@ -1,4 +1,4 @@
-import React, { createContext } from "react";
+import React from "react";
 export const allContexts = React.createContext();
 export const accommodationContext = React.createContext();
 export const tourContext = React.createContext();

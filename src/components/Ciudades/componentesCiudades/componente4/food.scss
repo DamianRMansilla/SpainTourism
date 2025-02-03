@@ -1,5 +1,7 @@
+@use '../../../general' as gen;
+
 .foodGlobal{
-    padding: 5rem 6rem;
+    padding: gen.$all-padding;
     .que-comer-ciudad{
         color: #1A202C;
         margin: 0;

@@ -1,0 +1,23 @@
+.entire-site {
+  margin-top: 5rem;
+}
+.entire-site .canva-container {
+  margin-left: 6rem;
+}
+.entire-site .canva-container .draggable-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px #000;
+  padding: 1rem 2rem;
+  width: 350px;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  box-sizing: border-box;
+  cursor: grab;
+}
+.entire-site .canva-container .draggable-element p {
+  margin: 0;
+}

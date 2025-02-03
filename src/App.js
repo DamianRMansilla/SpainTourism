@@ -24,25 +24,26 @@ import Playa from './components/Playa/playa';
 import CityAccommodation from './components/CiudadesInfo/Alojamiento/ciudadAlojamientos';
 import CityTours from './components/CiudadesInfo/Excursiones/ciudadExcursiones';
 import Comunidades from './Pages/Comunidad/comunidad';
+import Drag from './components/Drag-Drop/drag'
 
 // export const cityContext = React.createContext();
     
-function ScrollToTop() {
-  const location = useLocation();
+// function ScrollToTop() {
+//   const location = useLocation();
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location]);
+//   useEffect(() => {
+//     window.scrollTo(0, 0);
+//   }, [location]);
 
-  return null;
-}
+//   return null;
+// }
       
 function App() {
 
   return (
     <>
       <Router>
-        <ScrollToTop />
+        {/* <ScrollToTop /> */}
         <AllContexts>
           <Accommodation>
             <Tours>
@@ -66,6 +67,7 @@ function App() {
                         <Route exact path="/TodoElAño/Primavera" element={<Primavera/>}/>
                         <Route exact path="/TodoElAño/Verano" element={<Verano/>}/>
                         <Route exact path="/TodoElAño/Otoño" element={<Otoño/>}/>
+                        <Route exact path="/Drag" element={<Drag/>}/>
                         <Route exact path="" element=""/>
                         <Route path="*" element={<Error404/>}/>
                     </Routes>

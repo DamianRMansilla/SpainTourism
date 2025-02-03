@@ -1,0 +1,24 @@
+$all-padding: 4rem 16rem;
+
+@mixin background-image-center-cover(){
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+@mixin white-title(){
+    color: #FFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+@mixin absolute-bottom(){
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+}

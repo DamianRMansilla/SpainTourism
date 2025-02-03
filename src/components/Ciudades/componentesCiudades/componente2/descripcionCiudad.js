@@ -26,7 +26,7 @@ export default function DescripcionCiudad(){
                     <h2 className="city-title">{mainTitle}</h2>
                     <p>{description}</p>
                 </div>
-                <div className="city-left-side-componen">
+                <div className="city-left-side-component">
                     <div className="cityButtons">
                         <p className="desc-title">Información sobre <strong>{city}</strong></p>
                         <ul className="button-list">

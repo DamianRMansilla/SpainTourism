@@ -34,6 +34,7 @@ export default function WeatherApi(){
         fetch(url)
         .then(res => res.json())
         .then(response => { 
+            console.log(response)
             const weatherIcon = response[0].WeatherIcon;
             setWeatherIcon(weatherIcon);
             const localTemp = response[0].Temperature.Metric.Value;

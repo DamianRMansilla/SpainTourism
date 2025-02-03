@@ -1,6 +1,8 @@
+@use '../../../general' as gen;
+
 .excursion-container{
     background: #EAF0FC;
-    padding: 5rem 6rem;
+    padding: gen.$all-padding;
     .excursions{
         display: flex;
         flex-wrap: wrap;

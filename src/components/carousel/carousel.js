@@ -2,6 +2,8 @@ import React, {useRef, useEffect} from 'react';
 import "./carousel.css"
 import {IoIosArrowBack} from "react-icons/io"
 import {IoIosArrowForward} from "react-icons/io"
+import { HashLink as Link } from "react-router-hash-link";
+
 
 export default function Carousel(){
     const slideshow = useRef(null);
@@ -89,24 +91,24 @@ export default function Carousel(){
                     
                     <div className="slideshowContainer" ref={slideshow}>
                         <div className="slide slide1">
-                            <a href="https://www.infobae.com">
+                            <Link href="https://www.infobae.com">
                                 {/*<img src={img1}/>*/}
                                 {/* <p>Madrid</p> */}
-                            </a>
+                            </Link>
         
                         </div>
                         <div className="slide slide2">
-                            <a href="https://www.infobae.com">
+                            <Link href="https://www.infobae.com">
                                 {/* <p>Barcelona</p> */}
-                            </a>
+                            </Link>
                             
                         </div>
                         <div className="slide slide3">
-                            <a href="https://www.infobae.com"></a>
+                            <Link href="https://www.infobae.com"></Link>
                             {/*<p>Valencia</p>*/}
                         </div>
                         <div className="slide slide4">
-                            <a href="https://www.infobae.com"></a>
+                            <Link href="https://www.infobae.com"></Link>
                             {/*<p>Malaga</p>*/}
                         </div>
                     </div>

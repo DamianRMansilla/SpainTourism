@@ -1,3 +1,5 @@
+@use '../../../general' as gen;
+
 .cityDescription{
     margin-bottom: 5%;
     box-sizing: border-box;
@@ -13,8 +15,11 @@
     }
 }
 
+
+.city-left-side-component{
+    width: 40%;
+}
 .desc-title{
-    
     padding: 1rem 0 1rem 2vw;
     text-align: left;
     line-height: 2rem;
@@ -28,7 +33,7 @@
     margin: 4vh auto auto auto;
     box-sizing: border-box;
     border-radius: 20px;
-    width: 40vw;
+    // width: 35%;
     background-color: #eee;
     box-shadow: 0 0 10px rgb(191, 191, 191);
 }
@@ -75,12 +80,12 @@
 
 @media(min-width: 769px){
     .cityDescription{
-        width: 50%;
+        width: 60%;
         margin: 0 0 5% 0;
     }
     .cityMain{
         display: flex;
-        padding: 0 6rem;
+        padding: gen.$all-padding;
     }
 
 }

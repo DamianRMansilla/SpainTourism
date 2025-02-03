@@ -1,5 +1,5 @@
 import React from 'react';
-import Body2 from "../../components/Body2/body2"
+import Body2 from "../../components/HomeComponents/Body2/body2"
 import { HashLink as Link } from "react-router-hash-link";
 import { useContext } from 'react';
 import './ciudades.css'

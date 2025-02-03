@@ -1,9 +1,9 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Sidebar from "../Sidebar/sidebar";
 import SearchBar from '../SearchBar/searchBar';
 import Logo from '../../img/logo_espana_menu.jpg'
-import ReactDOM from 'react-dom'
+// import ReactDOM from 'react-dom'
 import { faChevronDown, faChevronUp, faMagnifyingGlass, faXmark, faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {useLocation} from "react-router-dom";
@@ -20,9 +20,6 @@ export default function Header(){
 
     var location = useLocation();
     var urlArray = location.pathname.split('/').filter(Boolean);
-    console.log(urlArray)
-    console.log(urlArray[urlArray.length -1])
-    console.log(location.pathname)
 
     for(let i = 0; i <= urlArray.length; i++){
         if(location.pathname === '/'){
@@ -47,13 +44,6 @@ export default function Header(){
             console.log('e');
         }
     }
-
-    // var b = location.pathname.split('/').filter(Boolean);
-    // for(let i = 0; i < b.length; i++){
-    //     if( b.length === 2 && b[0] === 'Ciudades' || 'ciudades'){
-    //         console.log(b[0])
-    //     }
-    // }
 
 
     return(

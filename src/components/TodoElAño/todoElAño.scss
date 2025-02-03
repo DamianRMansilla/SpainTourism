@@ -1,0 +1,112 @@
+@use '../general' as gen;
+
+
+h1{
+    font-size: 40px;
+}
+
+.backTodoElAño{
+    padding: gen.$all-padding;
+    background: #EAF0FC;
+}
+
+.todoElAño{
+    margin: 0.6rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 20vh;
+    grid-gap: 2px;
+    background-color: black;
+}
+
+.todoElAño p{
+    margin: 0;
+    font-size: 2rem;
+    font-family:'Ephesis', cursive;
+    font-weight: 500;
+}
+
+.invierno{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../img/invierno.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+.primavera{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../img/primavera.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+.verano{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../img/verano.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+.otoño{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../img/otoño.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.todoElAñoTitulo{
+    margin: 1rem 0 0 0;
+    color: #1A202C;
+    /* text-align: center; */
+    font-size: 2rem;
+    /* font-weight: 100; */
+}
+
+.pDisfruta{
+    font-size: 1.1rem;
+    margin: 1rem auto 2rem 0;
+}
+
+
+@media(min-width: 361px) and (max-width: 768px){
+    .todoElAño{
+        height: 65vh;
+    }
+}
+
+@media(min-width: 769px){
+    .todoElAño{
+        height: 85vh;
+    }
+    .todoElAño p{
+        font-size: 4rem;
+    }
+    .todoElAñoTitulo{
+        font-size: 3rem;
+    }
+
+}

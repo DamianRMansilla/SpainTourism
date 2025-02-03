@@ -15,7 +15,7 @@ export default function Playa(){
                 <div className='beach-container'>
                     {city.map(
                         mainCity =>{
-                            if(mainCity.playa == 'yes'){
+                            if(mainCity.playa === 'yes'){
                                 return(
                                     <Link to={`/Ciudades/${mainCity.city}#imageCity`} playa={mainCity.playa} className='playa-item' key={mainCity.id}>
                                         <div className='beach-city-container'>

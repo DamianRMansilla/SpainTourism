@@ -1,0 +1,159 @@
+.home-especiales {
+  padding: 4rem 16rem;
+}
+.home-especiales .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "big-image big-image small-image-1" "big-image big-image small-image-2" "small-image-3 small-image-4 small-image-5";
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  row-gap: 1rem;
+  height: 70rem;
+  width: auto;
+  margin: 4rem auto 0 auto;
+}
+.home-especiales .grid-container .container-1 {
+  grid-area: big-image;
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.9)), url("../../../public/img/General/vineyard.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  text-decoration: none;
+}
+.home-especiales .grid-container .container-1 .white-title {
+  color: #FFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin: 0;
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+}
+.home-especiales .grid-container .container-1:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.4) 50%, rgb(0, 0, 0)), url("../../../public/img/General/vineyard.jpg");
+}
+.home-especiales .grid-container .container-2 {
+  grid-area: small-image-1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.9)), url("../../../public/img/General/golf.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  text-decoration: none;
+}
+.home-especiales .grid-container .container-2 .white-title {
+  color: #FFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin: 0;
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+}
+.home-especiales .grid-container .container-2:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.4) 50%, rgb(0, 0, 0)), url("../../../public/img/General/golf.jpg");
+}
+.home-especiales .grid-container .container-3 {
+  grid-area: small-image-2;
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.9)), url("../../../public/img/General/rural.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  text-decoration: none;
+}
+.home-especiales .grid-container .container-3 .white-title {
+  color: #FFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin: 0;
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+}
+.home-especiales .grid-container .container-3:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.4) 50%, rgb(0, 0, 0)), url("../../../public/img/General/rural.jpg");
+}
+.home-especiales .grid-container .container-4 {
+  grid-area: small-image-3;
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.9)), url("../../../public/img/General/san-fermin.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  text-decoration: none;
+}
+.home-especiales .grid-container .container-4 .white-title {
+  color: #FFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin: 0;
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+}
+.home-especiales .grid-container .container-4:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.4) 50%, rgb(0, 0, 0)), url("../../../public/img/General/san-fermin.jpg");
+}
+.home-especiales .grid-container .container-5 {
+  grid-area: small-image-4;
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.9)), url("../../../public/img/General/pilgrim.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  text-decoration: none;
+}
+.home-especiales .grid-container .container-5 .white-title {
+  color: #FFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin: 0;
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+}
+.home-especiales .grid-container .container-5:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.4) 50%, rgb(0, 0, 0)), url("../../../public/img/General/pilgrim.jpg");
+}
+.home-especiales .grid-container .container-6 {
+  grid-area: small-image-5;
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.9)), url("../../../public/img/General/music-festival.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  text-decoration: none;
+}
+.home-especiales .grid-container .container-6 .white-title {
+  color: #FFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin: 0;
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+}
+.home-especiales .grid-container .container-6:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.4) 50%, rgb(0, 0, 0)), url("../../../public/img/General/music-festival.jpg");
+}
