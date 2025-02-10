@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { HashLink as Link } from "react-router-hash-link";
-import { mapCitiesContext } from '../../Context/AllContext';
+import { mapCitiesContext } from '../../../Context/AllContext';
 
 export default function CityComponent(props){
     const citiesOnMap = useContext(mapCitiesContext);
@@ -8,12 +8,12 @@ export default function CityComponent(props){
     return(
         <>
             {citiesOnMap.map(
-                cities =>{
+                (cities,index) =>{
                     var cityClassname = cities.city.replaceAll(' ','-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
                     var cityAllTogether = cities.city.replaceAll(' ','').toLowerCase();
                     if(cities.inMap === 'yes' && cityAllTogether === props.leftMap){
                         return(
-                            <div className={`map-side-city-element ${cityClassname}-side-element`}>
+                            <div className={`map-side-city-element ${cityClassname}-side-element`} key={index}>
                                 <div className={`city-box vertical-${cityClassname}-image`} style={{backgroundImage:`linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.9)), url('../../../img/Cities/${cityClassname}.jpg')`}}>
                                     <div className='city-text-container'>
                                         <Link to={`/Ciudades/${cities.city}#imageCity`} className='city-name'>{cities.city}</Link>

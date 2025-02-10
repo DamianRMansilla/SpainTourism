@@ -1,0 +1,34 @@
+.like-container {
+  display: none;
+}
+
+.cities .like-container {
+  display: flex;
+  align-items: center;
+}
+.cities .like-container .liked-heart-container {
+  display: flex;
+  height: 21px;
+}
+.cities .like-container .liked-heart-container p {
+  margin: 0 0.4rem;
+  font-size: 0.85rem;
+}
+.cities .like-container .liked-heart-container .liked-heart {
+  color: red;
+}
+.cities .like-container .liked-heart-container .not-yet-liked-heart {
+  margin-top: 3px;
+}
+.cities .like-container .not-liked-heart-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 21px;
+}
+.cities .like-container .not-liked-heart-container .not-yet-liked-heart {
+  margin-top: 3px;
+}
+.cities .like-container .not-liked-heart-container:hover .not-yet-liked-heart {
+  color: red;
+}

@@ -1,32 +1,20 @@
-.citiesMainContainer {
+.cities-general-container {
   padding: 4rem 0 0 0;
-  background-color: #eee;
 }
-.citiesMainContainer .title {
+.cities-general-container .citiesMainContainer {
+  padding: 4rem 16rem;
+}
+.cities-general-container .citiesMainContainer .title {
   padding-top: 1rem;
-  text-align: center;
+  font-family: "Montserrat", serif;
 }
-.citiesMainContainer .cardContainer {
+.cities-general-container .citiesMainContainer .cardContainer {
   padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
-@media (min-width: 641px) and (max-width: 800px) {
-  .citiesMainContainer {
-    padding: 3.5rem 3rem 0 3rem;
-  }
-}
-@media (min-width: 800px) and (max-width: 1200px) {
-  .citiesMainContainer {
-    padding: 3.5rem 6rem 0 6rem !important;
-  }
-}
-@media (min-width: 1201px) and (max-width: 1500px) {
-  .citiesMainContainer {
-    padding: 3.5rem 7rem 0 7rem !important;
-  }
-}
-@media (min-width: 1501px) {
-  .citiesMainContainer {
-    padding: 3rem 10rem 0 10rem !important;
-  }
+.cities-general-container .citiesMainContainer .cardContainer a {
+  display: block;
+  width: 20rem;
 }

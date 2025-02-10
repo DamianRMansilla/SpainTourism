@@ -15,8 +15,6 @@ export default function SpainMap(){
         setShowCommunityMap(true)  
     };
 
-    console.log(leftMap)
-
     return(
         <div className='SpainMapContainer'>
             <h1 className='title'>¿Dónde quieres ir?</h1>

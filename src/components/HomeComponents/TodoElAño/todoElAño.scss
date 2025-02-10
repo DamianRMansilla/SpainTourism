@@ -1,4 +1,4 @@
-@use '../general' as gen;
+@use '../../general' as gen;
 
 
 h1{
@@ -28,7 +28,7 @@ h1{
 }
 
 .invierno{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../img/invierno.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../../img/invierno.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -41,7 +41,7 @@ h1{
 
 
 .primavera{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../img/primavera.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../../img/primavera.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -54,7 +54,7 @@ h1{
 
 
 .verano{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../img/verano.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../../img/verano.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -67,7 +67,7 @@ h1{
 
 
 .otoño{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../img/otoño.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../../img/otoño.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

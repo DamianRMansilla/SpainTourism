@@ -25,23 +25,18 @@ export default function Header(){
         if(location.pathname === '/'){
             document.querySelector('body').className = '';
             document.querySelector('body').classList.add('home');
-            console.log('a');
         } else if(urlArray.length === 2 && urlArray[0] === 'Ciudades'){
             document.querySelector('body').className = '';
             document.querySelector('body').classList.add('cities');
-            console.log('b');
         } else if(urlArray[urlArray.length -1] === 'Ciudades' || urlArray[urlArray.length -1] === 'ciudades'){
             document.querySelector('body').className = '';
             document.querySelector('body').classList.add('city');
-            console.log('c');
         }  else if(urlArray[urlArray.length -1] === 'Alojamiento'){
             document.querySelector('body').className = '';
             document.querySelector('body').classList.add('accommodation');
-            console.log('d');
         } else if(urlArray[urlArray.length -1] === 'Tours'){
             document.querySelector('body').className = '';
             document.querySelector('body').classList.add('tours');
-            console.log('e');
         }
     }
 

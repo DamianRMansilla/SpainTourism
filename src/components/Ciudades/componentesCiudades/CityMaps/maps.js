@@ -28,4 +28,3 @@ export default function Map(){
 }
 
 
-//${cityMap.punto},

@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { mapCitiesContext } from '../../Context/AllContext';
+import { mapCitiesContext } from '../../../Context/AllContext';
 
 
 export default function CityOnMap(props){
@@ -8,13 +8,13 @@ export default function CityOnMap(props){
     return(
         <>
             {citiesOnMap.map(
-                citiesMap => {
+                (citiesMap, index) => {
                     var cityName = citiesMap.city.replaceAll(' ','-').toLowerCase();
                     var cityFunctionName = citiesMap.city.replaceAll(' ','').toLowerCase();
                     const addCity = ()=>{props.setLeftMap(cityFunctionName)};
                     if(citiesMap.inMap === 'yes'){
                         return(
-                            <div style={{top:`${citiesMap.topPosition}`,left:`${citiesMap.leftPosition}`}} className={`city-location ${cityName}-location`} onMouseEnter={addCity}>
+                            <div style={{top:`${citiesMap.topPosition}`,left:`${citiesMap.leftPosition}`}} className={`city-location ${cityName}-location`} onMouseEnter={addCity} key={index}>
                                 <span className='city-location-round'></span>
                                 <span className='city-name'>{`${citiesMap.city}`}</span>
                             </div>

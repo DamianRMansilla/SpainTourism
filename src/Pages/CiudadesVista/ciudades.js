@@ -13,22 +13,24 @@ export default function Ciudades(){
 
     return(
         <>
-            <div className='citiesMainContainer'>
+            <div className='cities-general-container'>
                 <Breadcrumbs/>
-                <h1 className='title'>Que ciudades te faltan recorrer?</h1>
-                <div className='cardContainer'>
-                    {city.map(
-                        mainCity =>{
-                            return(
-                                <Link to={`/Ciudades/${mainCity.city}#imageCity`} playa={mainCity.playa} className='playa-item' key={mainCity.id}>
-                                    <div className='cardImageText'>
-                                        <div className={`imageCardHeight ${mainCity.city.split(' ').join('').toLowerCase() + '-city'} city-image-main`}></div>
-                                        <p>{mainCity.city}</p>
-                                    </div>
-                                </Link>
-                            )
-                        }
-                    )}
+                <div className='citiesMainContainer'>
+                    <h2 className='title'>Que ciudades te faltan recorrer?</h2>
+                    <div className='cardContainer'>
+                        {city.map(
+                            mainCity =>{
+                                return(
+                                    <Link to={`/Ciudades/${mainCity.city}#imageCity`} playa={mainCity.playa} className='playa-item' key={mainCity.id}>
+                                        <div className='cardImageText'>
+                                            <div className={`imageCardHeight ${mainCity.city.split(' ').join('').toLowerCase() + '-city'} city-image-main`}></div>
+                                            <p>{mainCity.city}</p>
+                                        </div>
+                                    </Link>
+                                )
+                            }
+                        )}
+                    </div>
                 </div>
             </div>
         </>

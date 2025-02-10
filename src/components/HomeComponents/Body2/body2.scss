@@ -4,11 +4,13 @@
     padding: gen.$all-padding;
 }
 
-.title{
-    margin: 1rem 0 0 0;
-    color: #1A202C;
-    font-size: 1.4rem;
-    font-family: "Montserrat", serif;
+.home{
+    .title{
+        margin: 1rem 0 0 0;
+        color: #1A202C;
+        font-size: 1.4rem;
+        font-family: "Montserrat", serif;
+    }
 }
 .subtitle1{
     font-size: 1.1rem;
@@ -71,67 +73,67 @@
 }
 
 @media(min-width: 641px) and (max-width: 800px){
-    .masVisitadosGlobal{
-        padding: 4rem 3rem 0 3rem;
-    }
-    .cardContainer{
-        justify-content: center!important;
-        a{
-            width: 17rem!important;
+    .home{
+        .masVisitadosGlobal{
+            padding: 4rem 3rem 0 3rem;
         }
-    } 
+        .cardContainer{
+            justify-content: center!important;
+            a{
+                width: 17rem!important;
+            }
+        } 
+    }
 }
 
 @media(min-width: 800px) and (max-width: 1200px){
-    .masVisitadosGlobal{
-        padding: 4rem 3rem 0 3rem!important;
-    }
-    .title{
-        font-size: 3rem!important;
-    }
-    // .subtitle1{
-    //     font-size: 1.1rem!important;
-    //     margin: 1rem auto 4rem 1.5rem!important;
-    // }
-    .cardContainer{
-        justify-content: space-between!important;
-        a{
-            width: 15rem!important;
+    .home{
+        .masVisitadosGlobal{
+            padding: 4rem 3rem 0 3rem!important;
+        }
+        .title{
+            font-size: 3rem!important;
+        }
+        .cardContainer{
+            justify-content: space-between!important;
+            a{
+                width: 15rem!important;
+            }
         }
     }
 }
 
 
 @media(min-width: 1201px) and (max-width: 1500px){
-    .masVisitadosGlobal{
-        padding: 4rem 4rem 0 4rem!important;
-    }
-    .title{
-        font-size: 3rem!important;
-    }
-    // .subtitle1{
-    //     font-size: 1.1rem!important;
-    //     margin: 1rem auto 4rem 1.5rem!important;
-    // }
-    .cardContainer{
-        justify-content: space-between!important;
-        a{
-            width: 15rem!important;
+    .home{
+        .masVisitadosGlobal{
+            padding: 4rem 4rem 0 4rem!important;
+        }
+        .title{
+            font-size: 3rem!important;
+        }
+        .cardContainer{
+            justify-content: space-between!important;
+            a{
+                width: 15rem!important;
+            }
         }
     }
 }
 
 @media(min-width: 1501px){
-    .masVisitadosGlobal{
-        padding: gen.$all-padding;
-    }
-    .title{
-        font-size: 2rem!important;
-    }
-    .cardContainer{
-        justify-content: space-between!important;
-        a{
-            width: 19rem!important;
+    .home{
+        .masVisitadosGlobal{
+            padding: gen.$all-padding;
+        }
+        .title{
+            font-size: 2rem!important;
+        }
+        .cardContainer{
+            justify-content: space-between!important;
+            a{
+                width: 19rem!important;
+            }
         }
     }
 }

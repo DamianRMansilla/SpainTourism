@@ -3,7 +3,7 @@
   padding: 4rem 16rem;
 }
 
-.title {
+.home .title {
   margin: 1rem 0 0 0;
   color: #1A202C;
   font-size: 1.4rem;
@@ -70,55 +70,55 @@
   }
 }
 @media (min-width: 641px) and (max-width: 800px) {
-  .masVisitadosGlobal {
+  .home .masVisitadosGlobal {
     padding: 4rem 3rem 0 3rem;
   }
-  .cardContainer {
+  .home .cardContainer {
     justify-content: center !important;
   }
-  .cardContainer a {
+  .home .cardContainer a {
     width: 17rem !important;
   }
 }
 @media (min-width: 800px) and (max-width: 1200px) {
-  .masVisitadosGlobal {
+  .home .masVisitadosGlobal {
     padding: 4rem 3rem 0 3rem !important;
   }
-  .title {
+  .home .title {
     font-size: 3rem !important;
   }
-  .cardContainer {
+  .home .cardContainer {
     justify-content: space-between !important;
   }
-  .cardContainer a {
+  .home .cardContainer a {
     width: 15rem !important;
   }
 }
 @media (min-width: 1201px) and (max-width: 1500px) {
-  .masVisitadosGlobal {
+  .home .masVisitadosGlobal {
     padding: 4rem 4rem 0 4rem !important;
   }
-  .title {
+  .home .title {
     font-size: 3rem !important;
   }
-  .cardContainer {
+  .home .cardContainer {
     justify-content: space-between !important;
   }
-  .cardContainer a {
+  .home .cardContainer a {
     width: 15rem !important;
   }
 }
 @media (min-width: 1501px) {
-  .masVisitadosGlobal {
+  .home .masVisitadosGlobal {
     padding: 4rem 16rem;
   }
-  .title {
+  .home .title {
     font-size: 2rem !important;
   }
-  .cardContainer {
+  .home .cardContainer {
     justify-content: space-between !important;
   }
-  .cardContainer a {
+  .home .cardContainer a {
     width: 19rem !important;
   }
 }

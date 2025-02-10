@@ -1,46 +1,47 @@
-.breadcrumbs-container {
+.breadcrumbs-like-container {
+  display: flex;
+  justify-content: space-between;
   padding: 1rem 16rem;
+}
+.breadcrumbs-like-container .breadcrumbs-container {
   display: flex;
 }
-.breadcrumbs-container .breadcrumbs-item {
+.breadcrumbs-like-container .breadcrumbs-container .breadcrumbs-item {
   font-size: 0.85rem;
   text-decoration: none;
   color: black;
   display: flex;
   align-items: center;
 }
-.breadcrumbs-container .breadcrumbs-item span {
+.breadcrumbs-like-container .breadcrumbs-container .breadcrumbs-item span {
   margin-bottom: 3px;
 }
-.breadcrumbs-container .breadcrumb-chevron {
+.breadcrumbs-like-container .breadcrumbs-container .breadcrumb-chevron {
   margin: 0 0.35rem;
   height: 0.75rem;
 }
 
-.home .breadcrumbs-container {
+.home .breadcrumbs-like-container .breadcrumbs-container {
   display: none;
 }
 
-.cities .breadcrumb-chevron, .cities .breadcrumbs-item {
+.cities .breadcrumbs-like-container .breadcrumb-chevron, .cities .breadcrumbs-like-container .breadcrumbs-item {
   display: none;
 }
-.cities .breadcrumb-home, .cities .breadcrumb-home-chevron, .cities .breadcrumb-cities, .cities .breadcrumb-cities-chevron, .cities .breadcrumb-city-name {
+.cities .breadcrumbs-like-container .breadcrumb-home, .cities .breadcrumbs-like-container .breadcrumb-home-chevron, .cities .breadcrumbs-like-container .breadcrumb-cities, .cities .breadcrumbs-like-container .breadcrumb-cities-chevron, .cities .breadcrumbs-like-container .breadcrumb-city-name {
   display: flex;
 }
 
-.city .breadcrumbs-container {
-  padding: 1rem 6rem;
-}
-.city .breadcrumb-chevron, .city .breadcrumbs-item {
+.city .breadcrumbs-like-container .breadcrumb-chevron, .city .breadcrumbs-like-container .breadcrumbs-item {
   display: none;
 }
-.city .breadcrumb-home, .city .breadcrumb-home-chevron, .city .breadcrumb-cities, .city .breadcrumb-city-name, .city .breadcrumb-cities-chevron {
+.city .breadcrumbs-like-container .breadcrumb-home, .city .breadcrumbs-like-container .breadcrumb-home-chevron, .city .breadcrumbs-like-container .breadcrumb-cities, .city .breadcrumbs-like-container .breadcrumb-city-name, .city .breadcrumbs-like-container .breadcrumb-cities-chevron {
   display: flex;
 }
 
-.accommodation .breadcrumb-chevron, .accommodation .breadcrumbs-item {
+.accommodation .breadcrumbs-like-container .breadcrumb-chevron, .accommodation .breadcrumbs-like-container .breadcrumbs-item {
   display: none;
 }
-.accommodation .breadcrumb-home, .accommodation .breadcrumb-home-chevron, .accommodation .breadcrumb-cities, .accommodation .breadcrumb-city-name, .accommodation .breadcrumb-city-name-chevron, .accommodation .breadcrumb-cities-chevron, .accommodation .breadcrumb-accommodation {
+.accommodation .breadcrumbs-like-container .breadcrumb-home, .accommodation .breadcrumbs-like-container .breadcrumb-home-chevron, .accommodation .breadcrumbs-like-container .breadcrumb-cities, .accommodation .breadcrumbs-like-container .breadcrumb-city-name, .accommodation .breadcrumbs-like-container .breadcrumb-city-name-chevron, .accommodation .breadcrumbs-like-container .breadcrumb-cities-chevron, .accommodation .breadcrumbs-like-container .breadcrumb-accommodation {
   display: flex;
 }

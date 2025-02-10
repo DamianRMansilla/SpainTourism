@@ -1,4 +1,3 @@
-// import './../general.css'
 import './especiales.css'
 import { HashLink as Link } from 'react-router-hash-link'
 

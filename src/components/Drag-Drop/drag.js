@@ -4,16 +4,22 @@ import './drag.css'
 import DropArea from './DropArea/dropArea'
 
 export default function Drag(){
-    var list = {'city1': {id: 1, name: 'Element 1'},
-                'city2': {id: 2, name: 'Element 2'},
-                'city3': {id: 3, name: 'Element 3'},
-                'city4': {id: 4, name: 'Element 4'},
-                'city5': {id: 5, name: 'Element 5'}}
 
-    var cityList = Object.values(list)
-    cityList = cityList.map(objeto => objeto.name);
+    const likeStorage = localStorage.getItem('likes');
+    // console.log(likeStorage)
+
+    // var list = {'city1': {id: 1, name: 'Element 1'},
+    //             'city2': {id: 2, name: 'Element 2'},
+    //             'city3': {id: 3, name: 'Element 3'},
+    //             'city4': {id: 4, name: 'Element 4'},
+    //             'city5': {id: 5, name: 'Element 5'}}
+
+    // var cityList = Object.values(list)
+    // cityList = cityList.map(objeto => objeto.name);
     
-    const [tasks, setTasks] = useState(cityList  || []);
+    // const [tasks, setTasks] = useState(cityList  || []);
+
+    const [tasks, setTasks] = useState(JSON.parse(likeStorage) || []);
     // console.log(tasks)
 
     // useEffect(() => {

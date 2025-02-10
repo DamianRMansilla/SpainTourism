@@ -1,0 +1,39 @@
+.like-container{
+    display: none;
+}
+
+.cities{
+    .like-container{
+        display: flex;
+        align-items: center;
+        .liked-heart-container{
+            display: flex;
+            height: 21px;
+            p{
+                margin: 0 0.4rem;
+                font-size: 0.85rem;
+            }
+            .liked-heart{
+                color: red;
+            }
+            .not-yet-liked-heart{
+                margin-top: 3px;
+            }
+        }
+        .not-liked-heart-container{
+            display: none;
+            justify-content: center;
+            align-items: center;
+            height: 21px;
+            .not-yet-liked-heart{
+                margin-top: 3px;
+            }
+            &:hover{
+                .not-yet-liked-heart{
+                    color: red;
+                }
+            }
+        }
+    }
+}
+

@@ -27,7 +27,6 @@ export default function Body2City(){
             {mainCities.map(
                 mainCity =>{
                     var cityNoSpaces = mainCity.city.replaceAll(' ','');
-                    console.log(mainCity.id)
                     return(
                         <Link to={`/Ciudades/${cityNoSpaces}#imageCity`} key={mainCity.id}>
                             <div className="cardImageText">
